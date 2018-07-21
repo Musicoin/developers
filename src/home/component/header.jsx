@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router'
 var Translate = require('react-redux-i18n').Translate
 
 class Header extends Component {
@@ -17,7 +17,9 @@ class Header extends Component {
             </div>
             <div className="col-md-6 col-sm-6 clearfX">
               <ul className="right-links text-center">
-                <li><a href="#" target="_blank">Login</a></li>
+                <li>
+                  <Link to='/login'>Login</Link>
+                </li>
                 <li><a href="#" target="_blank">Sign Up</a></li>
               </ul>
             </div>

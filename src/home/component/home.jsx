@@ -8,6 +8,8 @@ import Contact from './contact.jsx'
 var Translate = require('react-redux-i18n').Translate
 class Home extends Component {
   componentDidMount () {
+    document.body.classList.toggle('isGradiant', false)
+    document.body.classList.toggle('text-center', false)
   }
   componentWillMount () {
   }

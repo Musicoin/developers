@@ -15,14 +15,25 @@ body {
   background: -webkit-linear-gradient(45deg, #F9D426, #f26a2b 98%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
-  /* background: -webkit-linear-gradient(#F9D426, #f26a2b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
+
+.isGradiant {
+  background: -webkit-linear-gradient(45deg, #fbbe0e, #ea611d 98%);
+  background-size: 100% 100%;
+  -webkit-animation: Gradient 15s ease infinite!important;
+  -moz-animation: Gradient 15s ease infinite!important;
+  animation: Gradient 15s ease infinite!important;
+  color: #FFF!important;
+}
+.mauto {
+  margin: auto!important;
+}
+
 .mt20 {
   margin-top: 20px;
+}
+.mht {
+  margin-top: 150px;
 }
 .eotYOT {
   font-size: 60px;
@@ -121,6 +132,9 @@ background-position:center;
 	padding: 10px 20px;
   text-decoration: none;
 }
+.mb10 {
+  margin-bottom: 10px;
+}
 
 .gmSlMb {
   display: inline-flex;
@@ -203,6 +217,9 @@ aside {
     /* h1, h2, h3 {
       text-align: center;
     } */
+    .mht {
+      margin-top: 100px;
+    }
     .logo, .social { text-align: center; }
     .macr {
       text-align: center;
@@ -241,13 +258,18 @@ aside {
      padding: 40px;
    }
 
+
+   .text-mini {
+     font-size: 12px;
+     font-weight: lighter;
+   }
+
    /* TAB */
 
 
 .nav-tabs {
     border-bottom: 1px solid gold;
 }
-
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
   color: #555;
@@ -311,12 +333,6 @@ font-weight: 600!important
   border-top: 0;
 }
 
-
-
-
-
-
-
 .nav-tabs>li>a {
   font-size: 22px;
   text-transform: uppercase;
@@ -333,3 +349,90 @@ font-weight: 600!important
 .nav-tabs>li>a:link {
   color: gold;
 }
+
+
+/* LOGIN */
+
+.form-signin input {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  min-height: 45px;
+}
+
+.form-signin .form-control:focus {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255,255,255,.25);
+}
+
+/* Change the white to any color ;) */
+.form-signin input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+/*Change text in autofill textbox*/
+.form-signin input:-webkit-autofill {
+  -webkit-text-fill-color: #343434 !important;
+}
+.btn-white {
+  background: white!important;
+  color: #343434!important;
+  font-weight: bold;
+}
+
+.form-signin ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+.form-signin :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+.form-signin ::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+/* SOCIAL LINKS */
+.social-icon {
+  text-align: center!important;
+}
+
+.social-icon {
+  margin-top: 1.5em;
+  list-style: none;
+  /* margin: 0; */
+  padding: 0;
+}
+
+.social-icon li {
+  display: inline-block;
+  padding-right: .5em;
+}
+
+.social-icon li:last-child { padding-right: 0; }
+
+.social-icon li a {
+  display: inline-block;
+  line-height: 40px;
+  color: #fff;
+  border: 2px solid white;
+  /* box-shadow: 0 0 2px 0 #f8e71c; */
+  border-radius: 50%;
+    /* text-transform: uppercase; */
+    padding: 18px;
+    font-weight: bold;
+    font-size: 20px;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+  text-decoration: none!important;
+  width: 60px;
+  height: 60px;
+}
+
+.social-icon li a:hover { background: #FFF; color: #343434; border: 1px solid white; }

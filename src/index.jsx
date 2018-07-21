@@ -10,6 +10,7 @@ import { loadTranslations, setLocale, syncTranslationWithStore, i18nReducer } fr
 
 import Main from './common/main.component.jsx'
 import Home from './home/component/home.jsx'
+import Login from './login/component/index.jsx'
 
 // import locales files
 import {es} from '../locales/es.json'
@@ -46,7 +47,7 @@ render(
       <Route component={Main} >
         <Route exact path='/' component={Home} />
         <IndexRoute component={Home} />
-        {/* <Route path='/nosotros' component={About} /> */}
+        <Route path='/login' component={Login} />
       </Route>
     </Router>
   </Provider>
