@@ -4,6 +4,12 @@ body {
 .null {
   clear: both!important;
 }
+.justify{
+  text-align: justify!important;
+}
+.ligth{
+  font-weight: lighter!important;
+}
 .inverted{color:#FFFFFF;background:#161616}.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h4,.inverted h5,.inverted p,.inverted span{color:#FFFFFF}
 .inverted-green{color:#FFFFFF;background:#ffd400}.inverted-green h1,.inverted-green h2,.inverted-green h3,.inverted-green h4,.inverted-green h4,.inverted-green h5,.inverted-green p,.inverted-green span{color:#FFFFFF}
 
@@ -65,8 +71,8 @@ h1 {
   /* display: block; */
   line-height: 40px;
   color: #fff;
-  border: 1px solid #fbbf02;
-  box-shadow: 0 0 2px 0 #f8e71c;
+  border: 1px solid gold;
+  box-shadow: 0 0 2px 0 gold;
   border-radius: 4px;
     /* text-transform: uppercase; */
     padding: 10 20px;
@@ -144,7 +150,7 @@ background-position:center;
   justify-content: center;
   background-image: linear-gradient(to right, rgb(253, 189, 41), rgb(241, 105, 43));
   color: rgb(255, 255, 254);
-  height: 67px;
+  /* height: 67px; */
   white-space: nowrap;
   text-transform: uppercase;
   cursor: pointer;
@@ -154,7 +160,7 @@ background-position:center;
   border-color: initial;
   border-image: initial;
   border-radius: 30px;
-  padding: 0px 50px 1px;
+  padding: 10px 50px;
   text-decoration: none;
 }
 .bgmSlMb {
@@ -180,10 +186,10 @@ background-position:center;
 .lefQSH {
   font-style: normal;
   font-weight: 900;
-  line-height: 72px;
+  line-height: 68px;
 }
 .hBwQAi {
-  font-size: 95px;
+  font-size: 64px;
   font-weight: 300;
   color: rgb(255, 255, 254);
   line-height: 1.2;

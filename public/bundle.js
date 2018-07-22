@@ -58302,7 +58302,6 @@ var Home = function (_Component) {
 }(_react.Component);
 
 exports.default = Home;
-// export default connect(mapStateToProps, { showMenuDay })(Home)
 
 /***/ }),
 /* 262 */
@@ -58488,7 +58487,7 @@ var About = function (_Component) {
             { className: 'row' },
             _react2.default.createElement(
               'div',
-              { className: 'col-md-12 mbs' },
+              { className: 'col-md-12 mbs justify ligth' },
               _react2.default.createElement(
                 'p',
                 null,
@@ -58575,7 +58574,7 @@ var About = function (_Component) {
                     _react2.default.createElement(
                       'span',
                       { className: 'pbs2' },
-                      '500 API Calls'
+                      'Private'
                     )
                   )
                 )
@@ -58681,7 +58680,7 @@ var Api = function (_Component) {
               ),
               _react2.default.createElement(
                 'div',
-                { className: 'tab-content', id: 'myTabContent' },
+                { className: 'tab-content justify', id: 'myTabContent' },
                 _react2.default.createElement(
                   'div',
                   { className: 'tab-pane fade show active', id: 'apifree', role: 'tabpanel', 'aria-labelledby': 'apifree-tab' },
@@ -59019,7 +59018,6 @@ var Login = function (_Component) {
 }(_react.Component);
 
 exports.default = Login;
-// export default connect(mapStateToProps, { showMenuDay })(Home)
 
 /***/ }),
 /* 267 */

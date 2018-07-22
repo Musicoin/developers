@@ -6,7 +6,7 @@ class Main extends Component {
     const children = this.props.children
     return (
       <div>
-          {children}
+        {children}
       </div>
     )
   }

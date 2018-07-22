@@ -37,7 +37,7 @@ store.dispatch(setLocale('es'))
 console.log(localStorage.getItem('myLang'))
 if (localStorage.getItem('myLang') !== '' || localStorage.getItem('myLang') !== null) {
   store.dispatch(setLocale(localStorage.getItem('myLang')))
-}else {
+} else {
   store.dispatch(setLocale('es'))
 }
 

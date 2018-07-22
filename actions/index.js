@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { loadTranslations, setLocale, syncTranslationWithStore } from 'react-redux-i18n'
 // import locales files
 import {es} from '../locales/es.json'
