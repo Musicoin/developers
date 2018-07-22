@@ -10,6 +10,10 @@ class Header extends Component {
         <div className='container'>
 
           <header className='row'>
+            <div className='mouse-helper-black'>
+              <span>Scroll Down</span>
+              <i className='icon ion-mouse-black' />
+            </div>
             <div className='col-md-6 col-sm-6'>
               <div className='logo'>
                 <img src='/img/logo.svg' alt='logo' width='200' height='80' />

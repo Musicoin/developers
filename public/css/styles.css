@@ -92,7 +92,7 @@ h1 {
   position: absolute;
   width: 100%;
   min-height: 100%;
-  background: rgba(27, 32, 38, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   top: 0;
 }
 .hero-unit {
@@ -223,6 +223,9 @@ aside {
     /* h1, h2, h3 {
       text-align: center;
     } */
+    .center-mobile {
+      text-align: center;
+    }
     .mht {
       margin-top: 100px;
     }
@@ -248,6 +251,39 @@ aside {
     }
 
    }
+
+
+   .mouse-helper-black {
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    bottom: 3em;
+    font-size: 0.7em;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+   .mouse-helper-black span {
+    display: block;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+   .mouse-helper-black .ion-mouse-black {
+    background: url(/img/mouse.png);
+    background-size: cover;
+    width: 0.6635em;
+    height: 0.9695em;
+    margin-top: 0.7em;
+}
+.icon {
+  display: inline-block;
+  font-size: 3.5em;
+}
+
 
    /* BOX PLAN */
 

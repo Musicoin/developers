@@ -58356,6 +58356,16 @@ var Header = function (_Component) {
             { className: 'row' },
             _react2.default.createElement(
               'div',
+              { className: 'mouse-helper-black' },
+              _react2.default.createElement(
+                'span',
+                null,
+                'Scroll Down'
+              ),
+              _react2.default.createElement('i', { className: 'icon ion-mouse-black' })
+            ),
+            _react2.default.createElement(
+              'div',
               { className: 'col-md-6 col-sm-6' },
               _react2.default.createElement(
                 'div',
