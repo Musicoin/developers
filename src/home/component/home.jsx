@@ -3,6 +3,7 @@ import Header from './header.jsx'
 import About from './about.jsx'
 import Api from './api.jsx'
 import Contact from './contact.jsx'
+import Footer from './../../common/footer.jsx'
 
 var Translate = require('react-redux-i18n').Translate
 class Home extends Component {
@@ -20,6 +21,7 @@ class Home extends Component {
         <About />
         <Api />
         <Contact />
+        <Footer />
       </div>
     )
   }

@@ -10,7 +10,7 @@ body {
 .ligth{
   font-weight: lighter!important;
 }
-.inverted{color:#FFFFFF;background:#161616}.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h4,.inverted h5,.inverted p,.inverted span{color:#FFFFFF}
+.inverted{color:#FFFFFF;background:#010101}.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h4,.inverted h5,.inverted p,.inverted span{color:#FFFFFF}
 .inverted-green{color:#FFFFFF;background:#ffd400}.inverted-green h1,.inverted-green h2,.inverted-green h3,.inverted-green h4,.inverted-green h4,.inverted-green h5,.inverted-green p,.inverted-green span{color:#FFFFFF}
 
 .gradiant-text {
@@ -141,6 +141,9 @@ background-position:center;
 .mb10 {
   margin-bottom: 10px;
 }
+.pv50 {
+  padding: 50px 0px;
+}
 
 .gmSlMb {
   display: inline-flex;
@@ -215,42 +218,7 @@ aside {
 .dtoqGy {
   list-style: none;
 }
-/* ==========================================================================
-   Small devices (tablets, 768px and up)
-   ========================================================================== */
 
-   @media (max-width: 768px) {
-    /* h1, h2, h3 {
-      text-align: center;
-    } */
-    .center-mobile {
-      text-align: center;
-    }
-    .mht {
-      margin-top: 100px;
-    }
-    .logo, .social { text-align: center; }
-    .macr {
-      text-align: center;
-    }
-    .right-links {
-      text-align: center!important;
-  }
-    aside {
-      margin-top: 50px;
-    }
-    .lefQSH {
-      font-style: normal;
-      font-weight: 900;
-      line-height: 54px;
-    }
-    .hBwQAi {
-      font-size: 62px;
-      color: rgb(255, 255, 254);
-      margin: 0px;
-    }
-
-   }
 
 
    .mouse-helper-black {
@@ -478,3 +446,145 @@ font-weight: 600!important
 }
 
 .social-icon li a:hover { background: #FFF; color: #343434; border: 1px solid white; }
+
+
+.mt20 {
+  margin-top: 20px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+
+/* FOOTER LINKS */
+.footer-icon {
+  text-align: left;
+}
+
+.footer-icon {
+  list-style: none;
+  /* margin: 0; */
+  padding: 0;
+}
+
+.footer-icon li {
+  display: inline-block;
+  padding-right: .5em;
+}
+
+.footer-icon li:last-child { padding-right: 0; }
+
+.footer-icon li a {
+  display: inline-block;
+  line-height: 40px;
+  color: #fff;
+  border: 2px solid white;
+  /* box-shadow: 0 0 2px 0 #f8e71c; */
+  border-radius: 50%;
+  /* text-transform: uppercase; */
+  padding: 13px;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+  text-decoration: none!important;
+  width: 50px;
+  height: 50px;
+}
+
+.footer-icon li a:hover { background: #FFF; color: #343434; border: 1px solid white; }
+
+.footer-links {
+  list-style: none!important;
+  margin: 0;
+  padding: 0;
+}
+.footer-links li {
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer-title {
+  font-size: 14px; 
+  font-weight: bold;
+  color: #343434!important;
+}
+
+.footer-text {
+  font-size: 10px;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.txr {
+  text-align: right;
+}
+.footer-icon-musicoin {
+  text-align: right;
+}
+
+.fio {
+
+}
+.fit{
+ text-align: center;
+}
+.fitr{
+  text-align: right;
+}
+.fitf {
+
+}
+/* ==========================================================================
+   Small devices (tablets, 768px and up)
+   ========================================================================== */
+
+   @media (max-width: 768px) {
+    /* h1, h2, h3 {
+      text-align: center;
+    } */
+    .center-mobile li {
+      text-align: center!important;
+    }
+    .footer-icon {
+      text-align: center!important;
+    }
+    
+    .mht {
+      margin-top: 100px;
+    }
+    .logo, .social { text-align: center; }
+    .macr {
+      text-align: center;
+    }
+    .right-links {
+      text-align: center!important;
+  }
+    aside {
+      margin-top: 50px;
+    }
+    .lefQSH {
+      font-style: normal;
+      font-weight: 900;
+      line-height: 54px;
+    }
+    .hBwQAi {
+      font-size: 62px;
+      color: rgb(255, 255, 254);
+      margin: 0px;
+    }
+
+    .footer-icon-musicoin {
+      justify-content: center;
+      display: flex;
+    }
+    .footer-title {
+      text-align: center;
+    }
+    .wallet-icons {
+        justify-content: center;
+      display: flex;
+      
+    }
+   }
