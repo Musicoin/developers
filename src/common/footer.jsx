@@ -64,10 +64,10 @@ class Header extends Component {
             </div>
           </div>
           <div className='row mt40'>
-            <span className='col footer-text'>
+            <span className='col-md-6 footer-text center-mobile'>
             Terms of use - Privacy Policy - Cookies
             </span>
-            <span className='col footer-text txr'>© 2018 MUSICOIN | POWERED BY $MUSIC</span>
+            <span className='col-md-6 footer-text center-mobile tard'>© 2018 MUSICOIN | POWERED BY $MUSIC</span>
           </div>
         </div>
       </div>

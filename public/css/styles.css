@@ -1,5 +1,7 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+
 }
 .null {
   clear: both!important;
@@ -10,6 +12,12 @@ body {
 .ligth{
   font-weight: lighter!important;
 }
+.square {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+}
+
 .inverted{color:#FFFFFF;background:#010101}.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h4,.inverted h5,.inverted p,.inverted span{color:#FFFFFF}
 .inverted-green{color:#FFFFFF;background:#ffd400}.inverted-green h1,.inverted-green h2,.inverted-green h3,.inverted-green h4,.inverted-green h4,.inverted-green h5,.inverted-green p,.inverted-green span{color:#FFFFFF}
 
@@ -201,6 +209,9 @@ background-position:center;
 .jKSHGy {
   background-image: linear-gradient(-134deg, rgb(225, 99, 50), rgb(244, 184, 57));
   min-height: 290px;
+}
+.b-gold {
+  background-color: gold;
 }
 .mbs {
   margin-bottom: 40px;
@@ -447,13 +458,104 @@ font-weight: 600!important
 
 .social-icon li a:hover { background: #FFF; color: #343434; border: 1px solid white; }
 
-
+.tard {
+  text-align: right;
+}
 .mt20 {
   margin-top: 20px;
 }
 .mt40 {
   margin-top: 40px;
 }
+.mt80 {
+  margin-top: 80px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.txr {
+  text-align: right;
+}
+.footer-icon-musicoin {
+  text-align: right;
+}
+
+.fio {
+
+}
+.fit{
+ text-align: center;
+}
+.fitr{
+  text-align: right;
+}
+.fitf {
+
+}
+/* ==========================================================================
+   Small devices (tablets, 768px and up)
+   ========================================================================== */
+
+   @media (max-width: 768px) {
+    /* h1, h2, h3 {
+      text-align: center;
+    } */
+
+    .center-mobile {
+      text-align: center;
+    }
+    .center-mobile li {
+      text-align: center!important;
+    }
+    
+    .footer-icon {
+      text-align: center!important;
+    }
+    
+    .mht {
+      margin-top: 100px;
+    }
+    .logo, .social { text-align: center; }
+    .macr {
+      text-align: center;
+    }
+    .right-links {
+      text-align: center!important;
+  }
+    aside {
+      margin-top: 50px;
+    }
+    .lefQSH {
+      font-style: normal;
+      font-weight: 900;
+      line-height: 54px;
+    }
+    .hBwQAi {
+      font-size: 62px;
+      color: rgb(255, 255, 254);
+      margin: 0px;
+    }
+
+    .footer-icon-musicoin {
+      justify-content: center;
+      display: flex;
+    }
+    .footer-title {
+      text-align: center;
+    }
+    .wallet-icons {
+        justify-content: center;
+      display: flex;
+      
+    }
+   }
 
 /* FOOTER LINKS */
 .footer-icon {
@@ -511,80 +613,7 @@ font-weight: 600!important
 .footer-text {
   font-size: 10px;
 }
-.fleft {
-  float: left;
-}
-.fright {
-  float: right;
-}
-.txr {
-  text-align: right;
-}
-.footer-icon-musicoin {
-  text-align: right;
-}
-
-.fio {
-
-}
-.fit{
- text-align: center;
-}
-.fitr{
-  text-align: right;
-}
-.fitf {
-
-}
-/* ==========================================================================
-   Small devices (tablets, 768px and up)
-   ========================================================================== */
-
-   @media (max-width: 768px) {
-    /* h1, h2, h3 {
-      text-align: center;
-    } */
-    .center-mobile li {
-      text-align: center!important;
-    }
-    .footer-icon {
-      text-align: center!important;
-    }
-    
-    .mht {
-      margin-top: 100px;
-    }
-    .logo, .social { text-align: center; }
-    .macr {
-      text-align: center;
-    }
-    .right-links {
-      text-align: center!important;
-  }
-    aside {
-      margin-top: 50px;
-    }
-    .lefQSH {
-      font-style: normal;
-      font-weight: 900;
-      line-height: 54px;
-    }
-    .hBwQAi {
-      font-size: 62px;
-      color: rgb(255, 255, 254);
-      margin: 0px;
-    }
-
-    .footer-icon-musicoin {
-      justify-content: center;
-      display: flex;
-    }
-    .footer-title {
-      text-align: center;
-    }
-    .wallet-icons {
-        justify-content: center;
-      display: flex;
-      
-    }
+   /* footer */
+   .footer-icon-musicoin img {
+    width: 80%!important
    }

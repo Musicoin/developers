@@ -7,7 +7,7 @@ class Container extends Component {
     // This must be exactly one element or it will warn.
     const children = this.props.children
     return (
-      <div className='container margin-top-app'>
+      <div className='container'>
         {children}
       </div>
     )

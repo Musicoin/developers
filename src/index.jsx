@@ -9,8 +9,10 @@ import thunk from 'redux-thunk'
 import { loadTranslations, setLocale, syncTranslationWithStore, i18nReducer } from 'react-redux-i18n'
 
 import Main from './common/main.component.jsx'
-import Home from './home/component/home.jsx'
+import Home from './home/component/index.jsx'
 import Login from './login/component/index.jsx'
+import WebConsole from './web-console/component/index.jsx'
+import Docs from './docs/component/index.jsx'
 
 // import locales files
 import {es} from '../locales/es.json'
@@ -48,6 +50,8 @@ render(
         <Route exact path='/' component={Home} />
         <IndexRoute component={Home} />
         <Route path='/login' component={Login} />
+        <Route path='/web-console' component={WebConsole} />
+        <Route path='/docs' component={Docs} />
       </Route>
     </Router>
   </Provider>
