@@ -24,7 +24,7 @@ body {
 .gradiant-text {
   display: inline-block;
   color: rgb(245, 145, 42)!important;
-  /* background: -webkit-linear-gradient(right, rgb(245, 145, 42), rgb(245, 145, 42)) text!important; 
+  /* background: -webkit-linear-gradient(right, rgb(245, 145, 42), rgb(245, 145, 42)) text!important;
   -webkit-text-fill-color: transparent!important; */
   background: -webkit-linear-gradient(45deg, #F9D426, #f26a2b 98%);
   -webkit-background-clip: text;
@@ -121,7 +121,7 @@ background-position:center;
 }
 
 .button-boder {
-  
+
     padding: 40px 35px;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -173,6 +173,9 @@ background-position:center;
   border-radius: 30px;
   padding: 10px 50px;
   text-decoration: none;
+}
+.gmSlMb:hover {
+  color: white;
 }
 .bgmSlMb {
   display: inline-flex;
@@ -514,11 +517,11 @@ font-weight: 600!important
     .center-mobile li {
       text-align: center!important;
     }
-    
+
     .footer-icon {
       text-align: center!important;
     }
-    
+
     .mht {
       margin-top: 100px;
     }
@@ -553,7 +556,7 @@ font-weight: 600!important
     .wallet-icons {
         justify-content: center;
       display: flex;
-      
+
     }
    }
 
@@ -605,7 +608,7 @@ font-weight: 600!important
   font-weight: bold;
 }
 .footer-title {
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: bold;
   color: #343434!important;
 }
@@ -617,3 +620,29 @@ font-weight: 600!important
    .footer-icon-musicoin img {
     width: 80%!important
    }
+
+
+   .dGMIhG::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+  }
+  .dGMIhH::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+  }
+  .iSDs {
+    position: absolute;
+    z-index: 99;
+  }

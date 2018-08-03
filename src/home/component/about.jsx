@@ -18,7 +18,7 @@ class About extends Component {
             </div>
             
             <div className='col-md-4 pr-4'>
-              <div className='jKSHGy'> <div className='inside'>
+              <div className='jKSHGy dGMIhG'> <div className='inside iSDs'>
                 <p className='pbs1'>Free</p>
                 <div className='mr-2'>
                   <span className='pbs2'>500 API Calls</span>
@@ -27,7 +27,7 @@ class About extends Component {
               </div>
             </div>
             <div className='col-md-4 pr-4'>
-              <div className='jKSHGy'> <div className='inside'>
+              <div className='jKSHGy dGMIhH'> <div className='inside iSDs'>
                 <p className='pbs1'>Developers</p>
                 <div className='mr-2'>
                   <span className='pbs2'>10K API Calls</span>
@@ -36,7 +36,7 @@ class About extends Component {
               </div>
             </div>
             <div className='col-md-4 pr-4'>
-              <div className='jKSHGy'> <div className='inside'>
+              <div className='jKSHGy dGMIhI'> <div className='inside iSDs'>
                 <p className='pbs1'>Enterprise</p>
                 <div className='mr-2'>
                   <span className='pbs2'>Private</span>

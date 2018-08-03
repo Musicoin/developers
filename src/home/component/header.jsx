@@ -37,7 +37,7 @@ class Header extends Component {
                   <span className='lefQSH'>Musicoin</span><br />
                   <span className='font-light'>Developers</span>
                 </h1>
-                <a href='#' className='gmSlMb btn mt20'>Learn More</a>
+                <Link to='/documentation' className='gmSlMb btn mt20'>Learn More</Link>
 
               </aside>
 

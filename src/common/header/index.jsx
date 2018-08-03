@@ -9,18 +9,19 @@ class Header extends Component {
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
         <div className='container'>
           <a className='navbar-brand' href='#'>
-            <img src='/img/logo-white.svg' alt='' width='180' />
+            {/* <img src='/img/logo-white.svg' alt='' width='180' /> */}
+            <img src='/img/logo-dev-white.svg' alt='' />
 
           </a>
-          <span className='fdev'>for Developers</span>
-          <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarsExample05' aria-controls='navbarsExample05' aria-expanded='false' aria-label='Toggle navigation'>
+          {/* <span className='fdev'>for Developers</span> */}
+          <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#nav-musicoin' aria-controls='nav-musicoin' aria-expanded='false' aria-label='Toggle navigation'>
             <span className='navbar-toggler-icon' />
           </button>
 
-          <div className='collapse navbar-collapse' id='navbarsExample05'>
+          <div className='collapse navbar-collapse' id='nav-musicoin'>
             <ul className='navbar-nav mr-auto'>
               <li className='nav-item '>
-                <Link to='/docs' activeClassName='active' className='nav-link'> DOCS </Link>
+                <Link to='/documentation' activeClassName='active' className='nav-link'> DOCS </Link>
               </li>
               <li className='nav-item'><a className='nav-link' href='#'>DASHBOARD</a></li>
 

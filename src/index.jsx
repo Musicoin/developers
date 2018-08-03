@@ -51,7 +51,7 @@ render(
         <IndexRoute component={Home} />
         <Route path='/login' component={Login} />
         <Route path='/web-console' component={WebConsole} />
-        <Route path='/docs' component={Docs} />
+        <Route path='/documentation' component={Docs} />
       </Route>
     </Router>
   </Provider>
