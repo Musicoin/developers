@@ -6,7 +6,6 @@
   "scripts": {
     "watch": "webpack -d --watch",
     "build": "webpack",
-    "serve": "serve ./public",
     "start": "nodemon",
     "production": "webpack --config ./webpack.production.config.js"
   },
