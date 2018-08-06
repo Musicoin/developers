@@ -1,8 +1,9 @@
 # DEVELOPERSDOTMUSICOIN
 
-### Dev Dependencies
+## Dev Dependencies
 The project needs install nodemon 
 `npm install -g nodemon`
+
 `npm install --save-dev nodemon`
 
 ## Install dependencies
