@@ -105,19 +105,24 @@ h1 {
 }
 .hero-unit {
   background: url(/img/background-musicoin.jpg) ;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width:100wh;
+    height:100vh;
+
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 background-position:center;
 
-  /* background: url(/img/background-musicoin.jpg) center center no-repeat fixed;
-  -webkit-background-size: cover;
-  background-size: cover; */
+
   padding: 3em 0;
   position: relative;
   color: #fff;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .button-boder {
