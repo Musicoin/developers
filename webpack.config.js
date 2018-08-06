@@ -50,7 +50,16 @@ var config = {
     //   'process.env.NODE_ENV': JSON.stringify('production')
     // }),
     // new UglifyJsPlugin()
-  ]
+  ],
+  devServer: {
+      historyApiFallback: true
+  },
+  externals: {
+      // global app config object
+      config: JSON.stringify({
+          apiUrl: 'http://localhost:3000'
+      })
+  }
 }
 
 module.exports = config
