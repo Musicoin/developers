@@ -36,7 +36,7 @@
     "react-date": "^2.0.0",
     "react-dates": "^17.1.1",
     "react-dom": "^16.0.0",
-    "react-redux": "^5.0.5",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.1.2",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
@@ -47,7 +47,6 @@
     "load-script": "^1.0.0",
     "react-cookie-banner": "^3.0.0",
     "react-lazy-load": "^3.0.13",
-    "react-redux-i18n": "^1.9.2",
     "react-router": "^3.2.0",
     "react-slick": "^0.18.0",
     "recompose": "^0.26.0"
