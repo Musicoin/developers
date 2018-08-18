@@ -1,7 +1,7 @@
 # DEVELOPERSDOTMUSICOIN
 
 ## Dev Dependencies
-The project needs install nodemon 
+The project needs install nodemon <br>
 `npm install -g nodemon`
 
 `npm install --save-dev nodemon`
@@ -46,4 +46,4 @@ You can make changes without having to run the script again. Ideal for developme
 
 ## LINKS
 
-* [API MONGO JWT](https://github.com/elgatoflaco/api-mongo-jwt) - Api necessary for the project to work.
+[API MONGO JWT](https://github.com/elgatoflaco/api-mongo-jwt) - Api necessary for the project to work.

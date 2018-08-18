@@ -8,6 +8,7 @@ import { PrivateRoute } from '../_components'
 import { HomePage } from '../HomePage'
 import { ProfilePage } from '../ProfilePage'
 import { LoginPage } from '../LoginPage'
+import { SignUpPage } from '../SignUpPage'
 import { DocsPage } from '../DocsPage'
 
 // import { AltaPage } from '../AltaPage';
@@ -34,6 +35,7 @@ class App extends React.Component {
           <div>
             <PrivateRoute path='/profile' component={ProfilePage} />
             <Route path='/login' component={LoginPage} />
+            <Route path='/signup' component={SignUpPage} />
             <Route path='/documentation' component={DocsPage} />
             <Route exact path='/' component={HomePage} />
           </div>

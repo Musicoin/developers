@@ -26,10 +26,6 @@ class Header extends Component {
               <li className='nav-item'>
                 <NavLink to='/profile' activeclassname='active' className='nav-link'> DASHBOARD </NavLink>
               </li>
-
-              <li className='nav-item '>
-                <NavLink to='/web-console' activeclassname='active' className='nav-link'> WEB CONSOLE </NavLink>
-              </li>
               <li className='nav-item'><a className='nav-link' href='#'>COMUNITY</a></li>
               <li className='nav-item'><a className='nav-link' href='#'>USE CASES</a></li>
             </ul>
