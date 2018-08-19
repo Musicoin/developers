@@ -665,3 +665,12 @@ font-weight: 600!important
   border-color: #000;
   border-radius: 0!important
 }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 2em!important;
+  color: #abb2bf;
+  background: #282c34;
+  border-radius: 5px;
+}

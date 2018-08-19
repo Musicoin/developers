@@ -10,6 +10,7 @@ import { ProfilePage } from '../ProfilePage'
 import { LoginPage } from '../LoginPage'
 import { SignUpPage } from '../SignUpPage'
 import { DocsPage } from '../DocsPage'
+import { ApiDocsPage } from '../ApiDocsPage'
 import { DashboardPage } from '../DashboardPage'
 
 // import { AltaPage } from '../AltaPage';
@@ -27,7 +28,6 @@ class App extends React.Component {
 
   render () {
     const { alert } = this.props
-    console.log(alert)
     return (
       <div className=''>
         {alert.message &&
@@ -39,6 +39,7 @@ class App extends React.Component {
             <Route path='/login' component={LoginPage} />
             <Route path='/signup' component={SignUpPage} />
             <PrivateRoute path='/documentation' component={DocsPage} />
+            <PrivateRoute path='/web-api' component={ApiDocsPage} />
             <PrivateRoute path='/dashboard' component={DashboardPage} />
             <Route exact path='/' component={HomePage} />
           </div>
