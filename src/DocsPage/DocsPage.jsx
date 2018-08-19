@@ -17,9 +17,7 @@ class DocsPage extends React.Component {
         <Container>
 
           <h1 className='super-big mt80'>Platform<br />Documentation </h1>
-          <div className='col-md-12'>
-            <p className='lead'>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-          </div>
+          <p className='lead'>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
           <div className='row mt80 mb40'>
             <div className='col-6 col-md-2'>
               <div className='jKSHGyz b-gold'>

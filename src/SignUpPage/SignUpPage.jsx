@@ -41,7 +41,6 @@ class SignUpPage extends React.Component {
         const { dispatch } = this.props;
         if (username && password) {
             dispatch(userActions.signup(username, password));
-            console.log('aquí')
         }
     }
 

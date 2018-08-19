@@ -31,7 +31,7 @@ class Header extends Component {
             </ul>
 
             {localStorage.getItem('user')
-            ? <Link to='/profile' className='nav-link butbotcol rounded-button'> Logout </Link>
+            ? <Link to='/login' className='nav-link butbotcol rounded-button'> Logout </Link>
             : <p>Profile no</p> }
 
           </div>

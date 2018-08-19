@@ -15,7 +15,7 @@ const customStyles = {
     transform             : 'translate(-50%, -50%)',
     padding               : '0',
     border                : 'none',
-    width                 : '40%',
+    // width                 : '40%',
   },
   overlay: {
     position: 'fixed',
@@ -71,7 +71,7 @@ class DashboardPage extends React.Component {
             <div className="header-modal-app">
               <div className="inside-modal">
                 <h3 ref={subtitle => this.subtitle = subtitle}>CREATE APP OR HARDWARE INTEGRATION</h3>
-                <p className="text-center">Step 1/2</p>
+                <p className="text-center stepModal">Step 1/2</p>
               </div>
             </div>
 
@@ -110,7 +110,7 @@ class DashboardPage extends React.Component {
 
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
-            <button onClick={this.closeModal} className="closeModal">X</button>
+            {/* <button onClick={this.closeModal} className="closeModal">X</button> */}
             </div>
             
             

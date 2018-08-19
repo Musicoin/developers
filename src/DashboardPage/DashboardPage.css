@@ -160,6 +160,9 @@ input[type="checkbox"]:focus {
 .closeModal:focus {
   outline: none;
 }
+.stepModal {
+  font-size: 12px;
+}
 /* PLACE HOLDER */
 .form-control::-webkit-input-placeholder { color: #ececec; }  /* WebKit, Blink, Edge */
 .form-control:-moz-placeholder { color: #ececec; }  /* Mozilla Firefox 4 to 18 */

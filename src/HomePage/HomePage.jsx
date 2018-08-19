@@ -13,7 +13,7 @@ class RightLinks extends React.Component {
         <li>
           <Link to='/login'>Login</Link>
         </li>
-        <li><a href='#' target='_blank'>Sign Up</a></li>
+        <li><a href='/signup'>Sign Up</a></li>
       </div>
     )
   }

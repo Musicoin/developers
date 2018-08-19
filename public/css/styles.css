@@ -651,3 +651,17 @@ font-weight: 600!important
     position: absolute;
     z-index: 99;
   }
+
+  .lead {
+    font-size: 24px;
+    max-width: 670px;
+    font-weight: 100;
+    line-height: 1.3;
+}
+
+.alert-danger {
+  color: #ff6767;
+  background-color: #000;
+  border-color: #000;
+  border-radius: 0!important
+}
