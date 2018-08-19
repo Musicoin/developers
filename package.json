@@ -41,6 +41,7 @@
     "react-date": "^2.0.0",
     "react-dates": "^17.1.1",
     "react-dom": "^16.0.0",
+    "react-highlight": "^0.12.0",
     "react-lazy-load": "^3.0.13",
     "react-modal": "^3.5.1",
     "react-redux": "^5.0.7",

@@ -1,5 +1,6 @@
 import React from 'react'
-
+import Highlight from 'react-highlight'
+import '../../node_modules/highlight.js/styles/atom-one-dark.css'
 import { Header } from '../_common/Header'
 import Container from '../_common/Container.jsx'
 import './DocsPage.css'
@@ -81,6 +82,12 @@ class DocsPage extends React.Component {
             </div>
             </div>
 
+          </div>
+          <div className='col-md-12'>
+          <Highlight innerHTML={true}>{'<p>Hello world</p>'}</Highlight>
+          <Highlight language="javascript">
+            {`function foo() { return 'bar' }`}
+          </Highlight>
           </div>
         </Container>
       </div>
