@@ -24,14 +24,14 @@ class Header extends Component {
                 <NavLink to='/documentation' activeclassname='active' className='nav-link'> DOCS </NavLink>
               </li>
               <li className='nav-item'>
-                <NavLink to='/profile' activeclassname='active' className='nav-link'> DASHBOARD </NavLink>
+                <NavLink to='/dashboard' activeclassname='active' className='nav-link'> DASHBOARD </NavLink>
               </li>
               <li className='nav-item'><a className='nav-link' href='#'>COMUNITY</a></li>
               <li className='nav-item'><a className='nav-link' href='#'>USE CASES</a></li>
             </ul>
 
             {localStorage.getItem('user')
-            ? <Link to='/profile' className='nav-link butbotcol'> Profile </Link>
+            ? <Link to='/profile' className='nav-link butbotcol rounded-button'> Logout </Link>
             : <p>Profile no</p> }
 
           </div>

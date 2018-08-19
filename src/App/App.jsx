@@ -10,6 +10,7 @@ import { ProfilePage } from '../ProfilePage'
 import { LoginPage } from '../LoginPage'
 import { SignUpPage } from '../SignUpPage'
 import { DocsPage } from '../DocsPage'
+import { DashboardPage } from '../DashboardPage'
 
 // import { AltaPage } from '../AltaPage';
 
@@ -36,7 +37,8 @@ class App extends React.Component {
             <PrivateRoute path='/profile' component={ProfilePage} />
             <Route path='/login' component={LoginPage} />
             <Route path='/signup' component={SignUpPage} />
-            <Route path='/documentation' component={DocsPage} />
+            <PrivateRoute path='/documentation' component={DocsPage} />
+            <PrivateRoute path='/dashboard' component={DashboardPage} />
             <Route exact path='/' component={HomePage} />
           </div>
         </Router>
