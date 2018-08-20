@@ -18,7 +18,7 @@ a:link {
 .justify{
   text-align: justify!important;
 }
-.ligth{
+.light{
   font-weight: lighter!important;
 }
 .square {
@@ -162,6 +162,9 @@ background-position:center;
 }
 .mb10 {
   margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
 }
 .pv50 {
   padding: 50px 0px;
@@ -737,7 +740,12 @@ font-weight: 600!important
   font-weight: bolder;
 }
 
+.green {
+  color: #20c95c;
+}
 
-
+tbody tr {
+  font-size: 14px;
+}
 
 
