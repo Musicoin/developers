@@ -1,9 +1,9 @@
 import React from 'react'
-
+import '../../node_modules/highlight.js/styles/atom-one-dark.css'
 import { Header } from '../_common/Header'
 import Container from '../_common/Container.jsx'
 import Modal from 'react-modal'
-import './DashboardPage.css'
+import './ClientsPage.css'
 
 const customStyles = {
   content : {
@@ -27,7 +27,12 @@ const customStyles = {
   },
 };
 
-class DashboardPage extends React.Component {
+class ClientsPage extends React.Component {
+  componentDidMount () {
+  }
+  componentWillUnmount () {
+  }
+
   constructor() {
     super();
 
@@ -58,7 +63,12 @@ class DashboardPage extends React.Component {
       <div>
         <Header />
         <Container>
-          <h1 className='super-big mt80'>Dashboard</h1>
+          <h1 className='super-big mt80'>Client Dashboard</h1>
+          <p className='lead'>You can Generate a clientID, upgrade plans and monitor rate limits via the services provided below.
+            While generating a clientID, you are required to provide your application's intended purpose (Web, Android / iOS App)
+            for easy tracking by Musicoin regarding ewhether the clients are being used for their intended purpose. Usage of
+            the Musicoin API found to be in violation with the Musicoin terms of service may be subject to legal action.
+          </p>
           <button onClick={this.openModal}>Create App</button>
           <Modal
             isOpen={this.state.modalIsOpen}
@@ -74,7 +84,6 @@ class DashboardPage extends React.Component {
                 <p className="text-center stepModal">Step 1/2</p>
               </div>
             </div>
-
             <div className="inside-modal">
             <form>
               <div className="form-group">
@@ -107,15 +116,43 @@ class DashboardPage extends React.Component {
                   <label htmlFor="styled-checkbox-5">Speaker</label>
                 </li>
               </ul>
-
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
             {/* <button onClick={this.closeModal} className="closeModal">X</button> */}
             </div>
-            
-            
-            
           </Modal>
+          <div className='row mt80 mb40'>
+            <div className='col-6 col-md-4'>
+              <div className='jKSHGyz b-gold'>
+                <div className='inside icon-dev'>
+                  <i className='fas fa-code' />
+                </div>
+              </div>
+              <div className='text-dev'>
+              web app
+            </div>
+            </div>
+            <div className='col-6 col-md-4'>
+              <div className='jKSHGyz b-gold'>
+                <div className='inside icon-dev'>
+                  <i className='fas fa-code' />
+                </div>
+              </div>
+              <div className='text-dev'>
+              ios app
+            </div>
+            </div>
+            <div className='col-6 col-md-4'>
+              <div className='jKSHGyz b-gold'>
+                <div className='inside icon-dev'>
+                  <i className='fas fa-code' />
+                </div>
+              </div>
+              <div className='text-dev'>
+              android app
+            </div>
+            </div>
+          </div>
         </Container>
       </div>
 
@@ -123,4 +160,4 @@ class DashboardPage extends React.Component {
   }
 }
 
-export { DashboardPage }
+export { ClientsPage }

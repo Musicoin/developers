@@ -1,0 +1,281 @@
+.red {
+  color: red;
+}
+
+.header-modal-app {
+  background: gold;
+  color: white;
+}
+
+.header-modal-app p {
+  margin: 0;
+}
+
+.header-modal-app h3 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.inside-modal {
+  padding: 40px;
+}
+
+.inputForm {
+  border: none;
+  border-bottom: 1px solid gold;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid gold;
+  /* border-color: #80bdff; */
+  outline: 0;
+  box-shadow: none;
+}
+
+/* forms */
+
+.unstyled {
+  margin: 0;
+  padding: 0;
+}
+
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.styled-checkbox+label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.styled-checkbox+label:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid gold;
+}
+
+.styled-checkbox:hover+label:before {
+  /* background: gold; */
+}
+
+.styled-checkbox:focus+label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.styled-checkbox:checked+label:before {
+  background: gold;
+}
+
+.styled-checkbox:disabled+label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+
+.styled-checkbox:disabled+label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+
+.styled-checkbox:checked+label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.unstyled {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.checkbox-list li {
+  margin: 5px 0;
+}
+
+.centered {
+  width: 300px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  color: #4571ec;
+}
+
+input[type="checkbox"]:focus {
+  border: none !important;
+}
+
+.checkbox-list label {
+  font-size: 11px;
+  color: #CCC;
+}
+
+.textForm {
+  height: 90px;
+}
+
+.closeModal {
+  background: #ffc107;
+  width: 60px;
+  height: 60px;
+  border: none !important;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border-radius: 50%;
+}
+
+.closeModal:focus {
+  outline: none;
+}
+
+.stepModal {
+  font-size: 12px;
+}
+
+/* PLACE HOLDER */
+
+.form-control::-webkit-input-placeholder {
+  color: #ececec;
+}
+
+/* WebKit, Blink, Edge */
+
+.form-control:-moz-placeholder {
+  color: #ececec;
+}
+
+/* Mozilla Firefox 4 to 18 */
+
+.form-control::-moz-placeholder {
+  color: #ececec;
+}
+
+/* Mozilla Firefox 19+ */
+
+.form-control:-ms-input-placeholder {
+  color: #ececec;
+}
+
+/* Internet Explorer 10-11 */
+
+.form-control::-ms-input-placeholder {
+  color: #ececec;
+}
+
+/* Microsoft Edge */
+
+@media (max-width: 575.98px) {
+  .icon-dev {
+    font-size: 64px !important;
+    text-align: center;
+    padding-top: 60px !important;
+  }
+  .jKSHGyz {
+    min-height: 200px;
+  }
+  .super-big {
+    font-size: 40px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .icon-dev {
+    font-size: 64px;
+    text-align: center;
+  }
+  .jKSHGyz {
+    min-height: 200px;
+  }
+  .super-big {
+    font-size: 64px;
+  }
+  .inside {
+    padding: 10px !important;
+    padding-top: 60px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .icon-dev {
+    font-size: 34px;
+    text-align: center;
+  }
+  .jKSHGyz {
+    min-height: 80px;
+  }
+  .inside {
+    padding: 10px !important;
+    padding-top: 20px !important;
+  }
+  .text-dev {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .icon-dev {
+    font-size: 24px;
+    text-align: center;
+    font-size: 45px;
+  }
+  .jKSHGyz {
+    min-height: 120px;
+  }
+  .super-big {
+    font-size: 80px !important;
+    line-height: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .icon-dev {
+    font-size: 70px;
+    text-align: center;
+  }
+  .jKSHGyz {
+    min-height: 160px;
+  }
+  .super-big {
+    font-size: 100px !important;
+    line-height: 80px;
+  }
+}
+
+.super-big {
+  font-weight: bolder;
+}
+
+.icon-dev {
+  color: white;
+}
+
+.text-dev {
+  color: white;
+  text-shadow: 0 0 black, 0 0 2px black;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 10px;
+  text-transform: uppercase;
+}

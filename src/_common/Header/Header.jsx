@@ -21,16 +21,12 @@ class Header extends Component {
           <div className='collapse navbar-collapse' id='nav-musicoin'>
             <ul className='navbar-nav mr-auto'>
               <li className='nav-item '>
-                <NavLink to='/documentation' activeclassname='active' className='nav-link'> DOCS </NavLink>
+                <NavLink to='/clients' activeclassname='active' className='nav-link'> CLIENTS </NavLink>
               </li>
               <li className='nav-item '>
-                <NavLink to='/web-api' activeclassname='active' className='nav-link'> WEB API </NavLink>
+                <NavLink to='/docs' activeclassname='active' className='nav-link'> DOCS </NavLink>
               </li>
-              <li className='nav-item'>
-                <NavLink to='/dashboard' activeclassname='active' className='nav-link'> DASHBOARD </NavLink>
-              </li>
-              <li className='nav-item'><a className='nav-link' href='#'>COMUNITY</a></li>
-              <li className='nav-item'><a className='nav-link' href='#'>USE CASES</a></li>
+              <li className='nav-item'><a className='nav-link' href='https://forum.musicoin.org' target="_blank"> COMMUNITY</a></li>
             </ul>
 
             {localStorage.getItem('user')

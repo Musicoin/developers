@@ -1,106 +1,15 @@
-
-
-@media (max-width: 575.98px) { 
-  .icon-dev {
-    font-size: 64px!important;
-    text-align: center;
-    padding-top: 60px!important;
-  }
-  .jKSHGyz {
-    min-height: 200px;
-  }
-  .super-big {
-    font-size: 40px!important;
-  }
+th, td {
+  font-weight: 100;
+  padding: 7px 40px 7px 0;
 }
 
-
-@media (min-width: 576px) and (max-width: 767.98px) { 
-  .icon-dev {
-    font-size: 64px;
-    text-align: center;
-  }
-  .jKSHGyz {
-    min-height: 200px;
-  }
-  .super-big {
-    font-size: 64px;
-  }
-  .inside {
-    padding: 10px!important;
-    padding-top: 60px!important;
-  }
+td {
+  border-top: 1px solid #d9dadc;
 }
 
-
-@media (min-width: 768px) and (max-width: 991.98px) { 
-  .icon-dev {
-    font-size: 34px;
-    text-align: center;
-  }
-  .jKSHGyz {
-    min-height: 80px;
-  }
-  .inside {
-    padding: 10px!important;
-    padding-top: 20px!important;
-  }
-  .text-dev {
-    font-size: 12px!important;
-  }
-}
-
-
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-  .icon-dev {
-    font-size: 24px;
-    text-align: center;
-    font-size: 45px;
-  }
-  .jKSHGyz {
-    min-height: 120px;
-  }
-  .super-big {
-    font-size: 80px!important;
-    line-height: 70px;
-  }
-  
-}
-
-
-@media (min-width: 1200px) { 
-  .icon-dev {
-    font-size: 70px;
-    text-align: center;
-  }
-  .jKSHGyz {
-    min-height: 160px;
-  }
-  .super-big {
-    font-size: 100px!important;
-    line-height: 80px;
-  }
-  
-}
-
-
-.super-big {
-  font-weight: bolder;
-}
-.icon-dev {
-  color: white;
-}
-.text-dev {
-  color: white;
-  text-shadow: 0 0 black, 0 0 2px black;
-  font-size: 14px;
-  text-align: center;
-  font-weight: bolder;
-  margin-top: 10px;
+thead {
+  color: #c1c3c6;
+  border-bottom: 2px solid #c1c3c6;
+  font-size: 12px;
   text-transform: uppercase;
 }
-
-
-
-
-
