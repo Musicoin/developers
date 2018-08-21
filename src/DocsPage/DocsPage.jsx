@@ -69,15 +69,31 @@ class DocsPage extends React.Component {
 
           <div>
             <h2>API Endpoints</h2>
-            <h3>User Related Endpoints</h3>
-<ul>
-<li>
-<Highlight className='console'>
-{`POST /auth/signup
+            <h3 className="light">User Related Endpoints</h3>
+            <ul className='fhxDdR dtoqGy'>
+              <li>
+                <table className='endpoint-list mb20'>
+                  <thead>
+                    <tr>
+                      <th>METHOD</th>
+                      <th>ENDPOINT</th>
+                      <th>USAGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>POST</td>
+                      <td> <span className='green'>/auth/signup</span> </td>
+                      <td>Description</td>
+                    </tr>
+                  </tbody>
+                </table>
+                {/* <Highlight className='console'>
+                  {`POST /auth/signup
 Endpoint: https://api.musicoin.org/auth/signup`}
-</Highlight>
-<Highlight className='console'>
-{`curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'username=varunram1&email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/signup"
+                </Highlight> */}
+                <Highlight className='console'>
+                  {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'username=varunram1&email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/signup"
 
 Response:
 {
@@ -85,15 +101,31 @@ Response:
   "publicKey": "5b769d9a2088882e67d1c765"
 }
 `}
-</Highlight>
-</li>
-<li>
-<Highlight className='console'>
-  {`POST /auth/credentials
+                </Highlight>
+              </li>
+              <li>
+                <table className='endpoint-list mb20'>
+                  <thead>
+                    <tr>
+                      <th>METHOD</th>
+                      <th>ENDPOINT</th>
+                      <th>USAGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>POST</td>
+                      <td> <span className='green'>/auth/credentials</span> </td>
+                      <td>Description</td>
+                    </tr>
+                  </tbody>
+                </table>
+                {/* <Highlight className='console'>
+                  {`POST /auth/credentials
 Endpoint: http://35.232.77.81:3000/auth/credentials"`}
-</Highlight>
-<Highlight className='console'>
-{`curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/credentials"
+                </Highlight> */}
+                <Highlight className='console'>
+                  {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/credentials"
 
 Response:
 {
@@ -109,45 +141,95 @@ Response:
   }
 }
 `}
-</Highlight>
-</li>
-<li>
-<Highlight className='console'>
-  {`POST /user/delete
+                </Highlight>
+              </li>
+              <li>
+              <table className='endpoint-list mb20'>
+                  <thead>
+                    <tr>
+                      <th>METHOD</th>
+                      <th>ENDPOINT</th>
+                      <th>USAGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>POST</td>
+                      <td> <span className='green'>/user/delete</span> </td>
+                      <td>Description</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                {/* <Highlight className='console'>
+                  {`POST /user/delete
 Endpoint: http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV`}
-</Highlight>
-<Highlight className='console'>
-{`curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
+                </Highlight> */}
+                <Highlight className='console'>
+                  {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
 
 Response:
 {
   "token": "7LUFf34slskv8Acy2cVUdTfBzsb6C4225L5PdA8A9NGgAX4gKiv7ViRI5w2CSob9pfqtfbV1UjBuQ4Wo"
 }
 `}
-</Highlight>
-</li>
-<li>
-<Highlight className='console'>
-  {`GET /user/delete/verify
+                </Highlight>
+              </li>
+              <li>
+              <table className='endpoint-list mb20'>
+                  <thead>
+                    <tr>
+                      <th>METHOD</th>
+                      <th>ENDPOINT</th>
+                      <th>USAGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>GET</td>
+                      <td> <span className='green'>/user/delete/verify</span> </td>
+                      <td>Description</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                {/* <Highlight className='console'>
+                  {`GET /user/delete/verify
 Endpoint: http://35.232.77.81:3000/user/delete/verify/7LUFf34slskv8Acy2cVUdTfBzsb6C4225L5PdA8A9NGgAX4gKiv7ViRI5w2CSob9pfqtfbV1UjBuQ4Wo?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"`}
-</Highlight>
-<Highlight className='console'>
-{`curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/delete/verify/7LUFf34slskv8Acy2cVUdTfBzsb6C4225L5PdA8A9NGgAX4gKiv7ViRI5w2CSob9pfqtfbV1UjBuQ4Wo?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
+                </Highlight> */}
+                <Highlight className='console'>
+                  {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/delete/verify/7LUFf34slskv8Acy2cVUdTfBzsb6C4225L5PdA8A9NGgAX4gKiv7ViRI5w2CSob9pfqtfbV1UjBuQ4Wo?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
 
 Response:
 {
   "success": true
 }
 `}
-</Highlight>
-</li>
-<li>
-<Highlight className='console'>
-  {`DELETE /user/delete
+                </Highlight>
+              </li>
+              <li>
+              <table className='endpoint-list mb20'>
+                  <thead>
+                    <tr>
+                      <th>METHOD</th>
+                      <th>ENDPOINT</th>
+                      <th>USAGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>DELETE</td>
+                      <td> <span className='green'>/user/delete</span> </td>
+                      <td>Description</td>
+                    </tr>
+                  </tbody>
+                </table>
+                {/* <Highlight className='console'>
+                  {`DELETE /user/delete
 Endpoint: http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV`}
-</Highlight>
-<Highlight className='console'>
-{`curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
+                </Highlight> */}
+                <Highlight className='console'>
+                  {`$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
 
 Response:
 {
@@ -155,15 +237,31 @@ Response:
   "message": "User account was successfully deleted"
 }
 `}
-</Highlight>
-</li>
-<li>
-<Highlight className='console'>
-  {`GET /user/ismember
+                </Highlight>
+              </li>
+              <li>
+              <table className='endpoint-list mb20'>
+                  <thead>
+                    <tr>
+                      <th>METHOD</th>
+                      <th>ENDPOINT</th>
+                      <th>USAGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>GET</td>
+                      <td> <span className='green'>/user/ismember</span> </td>
+                      <td>Description</td>
+                    </tr>
+                  </tbody>
+                </table>
+                {/* <Highlight className='console'>
+                  {`GET /user/ismember
 Endpoint: http://35.232.77.81:3000/user/ismember/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt`}
-</Highlight>
-<Highlight className='console'>
-{`curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/ismember/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
+                </Highlight> */}
+                <Highlight className='console'>
+                  {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/ismember/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
 
 Response:
 {
@@ -172,15 +270,31 @@ Response:
   "membershipLevel": 1
 }
 `}
-</Highlight>
-</li>
-<li>
-<Highlight className='console'>
-  {`GET /user/info
+                </Highlight>
+              </li>
+              <li>
+              <table className='endpoint-list mb20'>
+                  <thead>
+                    <tr>
+                      <th>METHOD</th>
+                      <th>ENDPOINT</th>
+                      <th>USAGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>GET</td>
+                      <td> <span className='green'>/user/info</span> </td>
+                      <td>Description</td>
+                    </tr>
+                  </tbody>
+                </table>
+                {/* <Highlight className='console'>
+                  {`GET /user/info
 Endpoint: http://35.232.77.81:3000/user/info/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt`}
-</Highlight>
-<Highlight className='console'>
-{`curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/info/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
+                </Highlight> */}
+                <Highlight className='console'>
+                  {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/info/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
 
 Response:
 {
@@ -198,16 +312,16 @@ Response:
   "membershipLevel": 1
 }
 `}
-</Highlight>
-</li>
+                </Highlight>
+              </li>
 // Use below template for other endpoints
 <li>
-<Highlight className='console'>
-  {`POST /auth/signup
+  <Highlight className='console'>
+    {`POST /auth/signup
 Endpoint: https://api.musicoin.org/auth/signup`}
-</Highlight>
-<Highlight className='console'>
-{`curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'username=varunram1&email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/signup"
+  </Highlight>
+  <Highlight className='console'>
+    {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'username=varunram1&email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/signup"
 
 Response:
 {
@@ -215,9 +329,9 @@ Response:
   "publicKey": "5b769d9a2088882e67d1c765"
 }
 `}
-</Highlight>
+  </Highlight>
 </li>
-</ul>
+            </ul>
           </div>
         </Container>
       </div>
