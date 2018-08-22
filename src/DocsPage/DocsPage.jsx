@@ -84,7 +84,7 @@ class DocsPage extends React.Component {
                     <tr>
                       <td>POST</td>
                       <td> <span className='green'>/auth/signup</span> </td>
-                      <td>Description</td>
+                      <td>Creates a new user on the musicoin platform</td>
                     </tr>
                   </tbody>
                 </table>
@@ -116,7 +116,7 @@ Response:
                     <tr>
                       <td>POST</td>
                       <td> <span className='green'>/auth/credentials</span> </td>
-                      <td>Description</td>
+                      <td>Get the Musicoin API credentials on the free tier</td>
                     </tr>
                   </tbody>
                 </table>
@@ -156,7 +156,7 @@ Response:
                     <tr>
                       <td>POST</td>
                       <td> <span className='green'>/user/delete</span> </td>
-                      <td>Description</td>
+                      <td>Endpoint to receive a token to delete a given user from the musicoin platform</td>
                     </tr>
                   </tbody>
                 </table>
@@ -188,7 +188,7 @@ Response:
                     <tr>
                       <td>GET</td>
                       <td> <span className='green'>/user/delete/verify</span> </td>
-                      <td>Description</td>
+                      <td>Verifies if the delete token passed is correct</td>
                     </tr>
                   </tbody>
                 </table>
@@ -220,7 +220,7 @@ Response:
                     <tr>
                       <td>DELETE</td>
                       <td> <span className='green'>/user/delete</span> </td>
-                      <td>Description</td>
+                      <td>Deletes the given user if the token provided matches with the one generate by the user</td>
                     </tr>
                   </tbody>
                 </table>
@@ -252,7 +252,7 @@ Response:
                     <tr>
                       <td>GET</td>
                       <td> <span className='green'>/user/ismember</span> </td>
-                      <td>Description</td>
+                      <td>Checks if a given user is a member of the muscoin platform and returns the membership level and days remaining</td>
                     </tr>
                   </tbody>
                 </table>
@@ -285,7 +285,7 @@ Response:
                     <tr>
                       <td>GET</td>
                       <td> <span className='green'>/user/info</span> </td>
-                      <td>Description</td>
+                      <td>Fetches publicly available information of the given user from the Musicoin platform</td>
                     </tr>
                   </tbody>
                 </table>

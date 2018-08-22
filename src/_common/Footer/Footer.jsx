@@ -10,26 +10,25 @@ class Footer extends Component {
         <div className='container pv50'>
           <div className='row'>
             <div className='col-6 col-md-3 wallet-icons'>
-              <img src='/img/footer/mycrypto.jpg' alt='' height='50' />
+              <a href="https://mycrypto.com/"><img src='/img/footer/mycrypto.jpg' alt='' height='50' /></a>
             </div>
             <div className='col-6 col-md-3 wallet-icons fit'>
-              <img src='/img/footer/coinomi.jpg' alt='' height='50' />
+              <a href="https://www.coinomi.com/"><img src='/img/footer/coinomi.jpg' alt='' height='50' /></a>
             </div>
             <div className='col-6 col-md-3 wallet-icons fit'>
-              <img src='/img/footer/bittrex.jpg' alt='' height='50' />
+              <a href="https://bittrex.com"><img src='/img/footer/bittrex.jpg' alt='' height='50' /></a>
             </div>
             <div className='col-6 col-md-3 wallet-icons fitr'>
-              <img src='/img/footer/cryptopia.jpg' alt='' height='50' />
+              <a href="https://cryptopia.com"><img src='/img/footer/cryptopia.jpg' alt='' height='50' /></a>
             </div>
           </div>
 
           <div className='row'>
             <div className='col-12 col-md-3 mt40'>
               <ul className='footer-icon center-mobile'>
-                <li><a href='#'><i className='fab fa-github' /></a></li>
-                <li><a href='#'><i className='fab fa-facebook-f' /></a></li>
-                <li><a href='#'><i className='fab fa-twitter' /></a></li>
-                <li><a href='#'><i className='fab fa-google-plus-g' /></a></li>
+                <li><a href='https://github.com/Musicoin' target="_blank"><i className='fab fa-github' /></a></li>
+                <li><a href='http://facebook.com/lovemusicoin/' target="_blank"><i className='fab fa-facebook-f' /></a></li>
+                <li><a href='https://twitter.com/musicoins' target="_blank"><i className='fab fa-twitter' /></a></li>
               </ul>
             </div>
             <div className='col-12 col-md-6 mt40'>
@@ -37,36 +36,20 @@ class Footer extends Component {
                 <div className='col'>
                   <h4 className='footer-title'>About</h4>
                   <ul className='footer-links'>
-                    <li>How its work</li>
-                    <li>Currency</li>
-                    <li>FAQ</li>
-                  </ul>
-                </div>
-                <div className='col'>
-                  <h4 className='footer-title'>About</h4>
-                  <ul className='footer-links'>
-                    <li>How its work</li>
-                    <li>Currency</li>
-                    <li>FAQ</li>
-                  </ul>
-                </div>
-                <div className='col'>
-                  <h4 className='footer-title'>About</h4>
-                  <ul className='footer-links'>
-                    <li>How its work</li>
-                    <li>Currency</li>
-                    <li>FAQ</li>
+                    <li><a href="https://musicoin.org/how-it-works">How its works</a></li>
+                    <li><a href="https://musicoin.org/musicians">Currency</a></li>
+                    <li><a href="https://musicoin.org/resources/faq">FAQ</a></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className='col-12 col-md-3 center-mobile mt40 footer-icon-musicoin'>
-              <img src='/img/logo.svg' alt='' height='50' />
+              <a href="https://musicoin.org"><img src='/img/logo.svg' alt='' height='50' /></a>
             </div>
           </div>
           <div className='row mt40'>
             <span className='col-md-6 footer-text center-mobile'>
-            Terms of use - Privacy Policy - Cookies
+            <a href="https://musicoin.org/legal/tos">Terms of use</a> - <a href="https://musicoin.org/legal/legal">Privacy Policy</a>
             </span>
             <span className='col-md-6 footer-text center-mobile tard'>© 2018 MUSICOIN | POWERED BY $MUSIC</span>
           </div>
