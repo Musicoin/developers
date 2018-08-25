@@ -5,7 +5,8 @@ export const userService = {
     login,
     logout,
     getAll,
-    signup
+    signup,
+    forgotPassword
 };
 
 function login(username, password) {
@@ -47,6 +48,21 @@ function signup(username, password) {
             return user;
         });
 }
+
+function forgotPassword (username) {
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username })
+    };
+
+    return fetch(`${config.apiUrl}/users/forgot-password`, requestOptions)
+        .then(handleResponse)
+        .then(message => {
+            return message;
+        });
+}
+
 function logout() {
     // remove user from local storage to log user out
     localStorage.removeItem('user');

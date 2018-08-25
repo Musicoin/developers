@@ -17,6 +17,8 @@ export function authentication(state = initialState, action) {
       };
     case userConstants.LOGIN_FAILURE:
       return {};
+    case userConstants.LOGOUT:
+      return {};
     // signup
     case userConstants.SIGNUP_REQUEST:
       return {
@@ -30,7 +32,18 @@ export function authentication(state = initialState, action) {
       };
     case userConstants.SIGNUP_FAILURE:
       return {};
-    case userConstants.LOGOUT:
+    // forgot password
+    case userConstants.FORGOT_PASSWORD_REQUEST:
+      return {
+        recipient: action.recipient,
+        message: action.message
+      };
+    case userConstants.FORGOT_PASSWORD_SUCCESS:
+      return {
+        recipient: action.recipient,
+        message: action.message
+      };
+    case userConstants.FORGOT_PASSWORD_FAILURE:
       return {};
     default:
       return state

@@ -7,7 +7,8 @@ export const userActions = {
     login,
     logout,
     getAll,
-    signup
+    signup,
+    forgotPassword
 };
 
 function login(username, password) {
@@ -51,6 +52,28 @@ function signup(username, password) {
     function request(user) { return { type: userConstants.SIGNUP_REQUEST, user } }
     function success(user) { return { type: userConstants.SIGNUP_SUCCESS, user } }
     function failure(error) { return { type: userConstants.SIGNUP_FAILURE, error } }
+}
+
+function forgotPassword(username) {
+    return dispatch => {
+        dispatch(request({ username }));
+
+        userService.forgotPassword(username)
+            .then(
+                message => { 
+                    dispatch(success(message));
+                    // history.push('/login');
+                },
+                error => {
+                    dispatch(failure(error));
+                    dispatch(alertActions.error(error));
+                }
+            );
+    };
+
+    function request(message) { return { type: userConstants.FORGOT_PASSWORD_REQUEST, message } }
+    function success(message) { return { type: userConstants.FORGOT_PASSWORD_SUCCESS, message } }
+    function failure(error) { return { type: userConstants.FORGOT_PASSWORD_FAILURE, error } }
 }
 
 function logout() {
