@@ -45,6 +45,19 @@ export function authentication(state = initialState, action) {
       };
     case userConstants.FORGOT_PASSWORD_FAILURE:
       return {};
+    // reset password
+    case userConstants.RESET_PASSWORD_REQUEST:
+      return {
+        recipient: action.recipient,
+        message: action.message
+      };
+    case userConstants.RESET_PASSWORD_SUCCESS:
+      return {
+        recipient: action.recipient,
+        message: action.message
+      };
+    case userConstants.RESET_PASSWORD_FAILURE:
+      return {};
     default:
       return state
   }

@@ -8,7 +8,8 @@ export const userActions = {
     logout,
     getAll,
     signup,
-    forgotPassword
+    forgotPassword,
+    resetPassword
 };
 
 function login(username, password) {
@@ -74,6 +75,28 @@ function forgotPassword(username) {
     function request(message) { return { type: userConstants.FORGOT_PASSWORD_REQUEST, message } }
     function success(message) { return { type: userConstants.FORGOT_PASSWORD_SUCCESS, message } }
     function failure(error) { return { type: userConstants.FORGOT_PASSWORD_FAILURE, error } }
+}
+
+function resetPassword(code, password) {
+    return dispatch => {
+        dispatch(request({ code, password }));
+
+        userService.resetPassword(code, password)
+            .then(
+                message => { 
+                    dispatch(success(message));
+                    history.push('/login');
+                },
+                error => {
+                    dispatch(failure(error));
+                    dispatch(alertActions.error(error));
+                }
+            );
+    };
+
+    function request(message) { return { type: userConstants.RESET_PASSWORD_REQUEST, message } }
+    function success(message) { return { type: userConstants.RESET_PASSWORD_SUCCESS, message } }
+    function failure(error) { return { type: userConstants.RESET_PASSWORD_FAILURE, error } }
 }
 
 function logout() {

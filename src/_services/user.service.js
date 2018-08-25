@@ -6,7 +6,8 @@ export const userService = {
     logout,
     getAll,
     signup,
-    forgotPassword
+    forgotPassword,
+    resetPassword
 };
 
 function login(username, password) {
@@ -57,6 +58,20 @@ function forgotPassword (username) {
     };
 
     return fetch(`${config.apiUrl}/users/forgot-password`, requestOptions)
+        .then(handleResponse)
+        .then(message => {
+            return message;
+        });
+}
+
+function resetPassword (code, password) {
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code, password })
+    };
+
+    return fetch(`${config.apiUrl}/users/reset-password`, requestOptions)
         .then(handleResponse)
         .then(message => {
             return message;

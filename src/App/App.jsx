@@ -10,6 +10,7 @@ import { ProfilePage } from '../ProfilePage'
 import { LoginPage } from '../LoginPage'
 import { SignUpPage } from '../SignUpPage'
 import { ForgotPassword } from '../ForgotPassword'
+import { ResetPassword } from '../ResetPassword'
 import { ClientsPage } from '../ClientsPage'
 import { DocsPage } from '../DocsPage'
 
@@ -39,6 +40,7 @@ class App extends React.Component {
             <Route path='/login' component={LoginPage} />
             <Route path='/signup' component={SignUpPage} />
             <Route path='/forgot' component={ForgotPassword} />
+            <Route path='/reset-password/:code' component={ResetPassword} />
             <PrivateRoute path='/clients' component={ClientsPage} />
             <PrivateRoute path='/docs' component={DocsPage} />
             <Route exact path='/' component={HomePage} />
