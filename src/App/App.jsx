@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route } from 'react-router-dom'
+import { Router, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 import { history } from '../_helpers'
@@ -13,6 +13,8 @@ import { ForgotPassword } from '../ForgotPassword'
 import { ResetPassword } from '../ResetPassword'
 import { ClientsPage } from '../ClientsPage'
 import { DocsPage } from '../DocsPage'
+import { NoMatch } from '../_common/NoMatch'
+
 
 // import { AltaPage } from '../AltaPage';
 
@@ -27,6 +29,8 @@ class App extends React.Component {
     })
   }
 
+
+
   render () {
     const { alert } = this.props
     return (
@@ -35,7 +39,7 @@ class App extends React.Component {
         <div className={`alert ${alert.type}`}>{alert.message}</div>
                         }
         <Router history={history}>
-          <div>
+          <Switch>
             <PrivateRoute path='/profile' component={ProfilePage} />
             <Route path='/login' component={LoginPage} />
             <Route path='/signup' component={SignUpPage} />
@@ -44,7 +48,8 @@ class App extends React.Component {
             <PrivateRoute path='/clients' component={ClientsPage} />
             <PrivateRoute path='/docs' component={DocsPage} />
             <Route exact path='/' component={HomePage} />
-          </div>
+            <Route component={NoMatch} />
+          </Switch>
         </Router>
       </div>
     )

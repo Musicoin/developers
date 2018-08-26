@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { userActions } from '../_actions';
+import Spinner from '../_common/Spinner.jsx'
 // import './ForgotPassword.css';
 class ForgotPassword extends React.Component {
     constructor(props) {
@@ -44,8 +45,8 @@ class ForgotPassword extends React.Component {
     }
 
     render() {
-        const { loggingIn } = this.props;
-        const { username, submitted } = this.state;
+        const { loggingIn, isSuccess } = this.props;
+        const { username, submitted, } = this.state;
         return (
           <div className='mht'>
         <div className='col-md-4 mauto'>
@@ -55,13 +56,20 @@ class ForgotPassword extends React.Component {
               <label htmlFor='inputEmail' className='sr-only'>Email address</label>
                 <input type="text" className="form-control" name="username" value={username} placeholder="Email Address" onChange={this.handleChange} />
                 {submitted && !username &&
-                    <div className="help-block">Username is required</div>
+                    <div className="help-block">Email is required</div>
                 }
             </div>
       
             <button className='btn btn-lg btn-white btn-block' type='submit'>Submit</button>
+
+            {isSuccess && <div>
+                <div>
+                    If the email you entered exists, a reset link has been sent !
+                </div>
+            </div>}
+
               {loggingIn &&
-                  <img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                  <Spinner />
               }
             <p />
             <p className='mt-5 mb-3 text-muted'>
@@ -78,9 +86,10 @@ class ForgotPassword extends React.Component {
 }
 
 function mapStateToProps(state) {
-    const { loggingIn } = state.authentication;
+    const { loggingIn, isSuccess } = state.authentication;
     return {
-        loggingIn
+        loggingIn,
+        isSuccess
     };
 }
 

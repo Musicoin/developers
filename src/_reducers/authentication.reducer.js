@@ -35,11 +35,13 @@ export function authentication(state = initialState, action) {
     // forgot password
     case userConstants.FORGOT_PASSWORD_REQUEST:
       return {
+        isSuccess: true,
         recipient: action.recipient,
         message: action.message
       };
     case userConstants.FORGOT_PASSWORD_SUCCESS:
       return {
+        isSuccess: true,
         recipient: action.recipient,
         message: action.message
       };
