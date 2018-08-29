@@ -29720,7 +29720,7 @@ var ProfilePage = function (_React$Component) {
           null,
           _react2.default.createElement(
             'div',
-            { className: 'col-md-6 col-md-offset-3' },
+            { className: 'col-md-12 col-md-offset-3' },
             _react2.default.createElement(
               'h1',
               null,
@@ -29731,51 +29731,10 @@ var ProfilePage = function (_React$Component) {
             _react2.default.createElement(
               'p',
               null,
-              'You\'re logged in with React & JWT!!'
-            ),
-            _react2.default.createElement(
-              'h3',
-              null,
-              'Users from secure api end point:'
-            ),
-            users.loading && _react2.default.createElement(
-              'em',
-              null,
-              'Loading users...'
-            ),
-            users.message && _react2.default.createElement(
-              'span',
-              { className: 'text-danger' },
-              'ERROR: ',
-              users.message
-            ),
-            users.items && _react2.default.createElement(
-              'ul',
-              null,
-              users.items.map(function (user, index) {
-                return _react2.default.createElement(
-                  'li',
-                  { key: user._id },
-                  user.email + ' ' + user.uuid + ' ' + user.avatar
-                );
-              })
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
               _react2.default.createElement(
                 _reactRouterDom.Link,
                 { to: '/login' },
                 'Logout'
-              )
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: '/alta' },
-                'Alta'
               )
             )
           )
@@ -29952,6 +29911,15 @@ var Header = function (_Component) {
                   'a',
                   { className: 'nav-link', href: 'https://forum.musicoin.org', target: '_blank' },
                   ' COMMUNITY'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'nav-item ' },
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { to: '/profile', activeclassname: 'active', className: 'nav-link' },
+                  ' PROFILE '
                 )
               )
             ),
@@ -30206,7 +30174,7 @@ var LoginPage = function (_React$Component) {
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
                                 { to: '/' },
-                                _react2.default.createElement('img', { src: '/img/logo-white.svg', alt: 'Musicoin.org', width: '250', height: '87' })
+                                _react2.default.createElement('img', { src: '/img/logo-dev-white.svg', alt: 'Musicoin Developers Logo', height: '60' })
                             )
                         )
                     )
@@ -30411,7 +30379,7 @@ var SignUpPage = function (_React$Component) {
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
                                 { to: '/' },
-                                _react2.default.createElement('img', { src: '/img/logo-white.svg', alt: 'Musicoin.org', width: '250', height: '87' })
+                                _react2.default.createElement('img', { src: '/img/logo-dev-white.svg', alt: 'Musicoin Developers Logo', height: '60' })
                             )
                         )
                     )
@@ -30612,7 +30580,7 @@ var ForgotPassword = function (_React$Component) {
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
                                 { to: '/' },
-                                _react2.default.createElement('img', { src: '/img/logo-white.svg', alt: 'Musicoin.org', width: '250', height: '87' })
+                                _react2.default.createElement('img', { src: '/img/logo-dev-white.svg', alt: 'Musicoin Developers logo', height: '60' })
                             )
                         )
                     )
@@ -33336,7 +33304,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Get all genres defined on the Musicoin Platform'
                       )
                     )
                   )
@@ -33401,7 +33369,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Get a Random Release from the Musicoin Catalog'
                       )
                     )
                   )
@@ -33466,7 +33434,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Get a Random Release from a particular genre'
                       )
                     )
                   )
@@ -33531,7 +33499,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Get a list of artists who have recently signed up on the Musicoin Platform'
                       )
                     )
                   )
@@ -33596,7 +33564,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Get the details of a particular release'
                       )
                     )
                   )
@@ -33670,7 +33638,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Return whether an artist is verified or not'
                       )
                     )
                   )
@@ -33735,7 +33703,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Get publicly available information of an artist'
                       )
                     )
                   )
@@ -33800,7 +33768,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Get the total number of tips an artist has received so far'
                       )
                     )
                   )
@@ -33865,7 +33833,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Get the total number of times an artist\'s song has been played'
                       )
                     )
                   )
@@ -33930,7 +33898,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'Get the total earnings (tipCount + playCount) of an artist'
                       )
                     )
                   )
@@ -33995,7 +33963,7 @@ var DocsPage = function (_React$Component) {
                       _react2.default.createElement(
                         'td',
                         null,
-                        'Use this template'
+                        'A template for new routes'
                       )
                     )
                   )
@@ -51722,7 +51690,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "th, td {\n  font-weight: 100;\n  padding: 7px 40px 7px 0;\n}\n\ntd {\n  border-top: 1px solid #d9dadc;\n}\n\nthead {\n  color: #c1c3c6;\n  border-bottom: 2px solid #c1c3c6;\n  font-size: 12px;\n  text-transform: uppercase;\n}\n\nul {\n  list-style: url('/img/musicoin-favicon.png');\n}\n", ""]);
+exports.push([module.i, "th, td {\n  font-weight: 100;\n  padding: 7px 40px 7px 0;\n}\n\ntd {\n  border-top: 1px solid #d9dadc;\n}\n\nthead {\n  color: #c1c3c6;\n  border-bottom: 2px solid grey;\n  font-size: 12px;\n  text-transform: uppercase;\n}\n\nul {\n  list-style: url('/img/musicoin-favicon.png');\n}\n", ""]);
 
 // exports
 

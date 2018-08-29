@@ -23,33 +23,14 @@ class ProfilePage extends React.Component {
       <Main>
         <Header />
         <Container>
-
-          <div className='col-md-6 col-md-offset-3'>
-
+          <div className='col-md-12 col-md-offset-3'>
             <h1>Hi {user.user.email}!</h1>
-            <p>You're logged in with React & JWT!!</p>
-            <h3>Users from secure api end point:</h3>
-            {users.loading && <em>Loading users...</em>}
-            {users.message && <span className='text-danger'>ERROR: {users.message}</span>}
-            {users.items &&
-            <ul>
-              {users.items.map((user, index) =>
-                <li key={user._id}>
-                  {user.email + ' ' + user.uuid + ' ' + user.avatar}
-                </li>
-                        )}
-            </ul>
-                }
             <p>
               <Link to='/login'>Logout</Link>
-            </p>
-            <p>
-              <Link to='/alta'>Alta</Link>
             </p>
           </div>
         </Container>
       </Main>
-
     )
   }
 }

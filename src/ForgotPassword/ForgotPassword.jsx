@@ -59,7 +59,7 @@ class ForgotPassword extends React.Component {
                     <div className="help-block">Email is required</div>
                 }
             </div>
-      
+
             <button className='btn btn-lg btn-white btn-block' type='submit'>Submit</button>
 
             {isSuccess && <div>
@@ -74,10 +74,9 @@ class ForgotPassword extends React.Component {
             <p />
             <p className='mt-5 mb-3 text-muted'>
             <Link to='/'>
-                <img src='/img/logo-white.svg' alt='Musicoin.org' width='250' height='87' />
+                <img src='/img/logo-dev-white.svg' alt='Musicoin Developers logo' height='60' />
               </Link>
             </p>
-
           </form>
         </div>
       </div>

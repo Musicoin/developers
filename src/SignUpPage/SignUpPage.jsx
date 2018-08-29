@@ -74,7 +74,7 @@ class SignUpPage extends React.Component {
             <p />
             <p className='mt-5 mb-3 text-muted'>
             <Link to='/'>
-                <img src='/img/logo-white.svg' alt='Musicoin.org' width='250' height='87' />
+                <img src='/img/logo-dev-white.svg' alt='Musicoin Developers Logo' height='60' />
               </Link>
             </p>
 

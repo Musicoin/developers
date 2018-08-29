@@ -358,7 +358,7 @@ Response:
             <tr>
               <td>GET</td>
               <td> <span className='green'>/release/genres</span> </td>
-              <td>Use this template</td>
+              <td>Get all genres defined on the Musicoin Platform</td>
             </tr>
           </tbody>
       </table>
@@ -413,7 +413,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/release/random</span> </td>
-            <td>Use this template</td>
+            <td>Get a Random Release from the Musicoin Catalog</td>
           </tr>
         </tbody>
       </table>
@@ -453,7 +453,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/release/random?genre=blah</span> </td>
-            <td>Use this template</td>
+            <td>Get a Random Release from a particular genre</td>
           </tr>
         </tbody>
       </table>
@@ -495,7 +495,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/artist/new</span> </td>
-            <td>Use this template</td>
+            <td>Get a list of artists who have recently signed up on the Musicoin Platform</td>
           </tr>
         </tbody>
       </table>
@@ -628,7 +628,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/release/details</span> </td>
-            <td>Use this template</td>
+            <td>Get the details of a particular release</td>
           </tr>
         </tbody>
       </table>
@@ -672,7 +672,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/artist/isartist</span> </td>
-            <td>Use this template</td>
+            <td>Return whether an artist is verified or not</td>
           </tr>
         </tbody>
       </table>
@@ -700,7 +700,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/artist/info</span> </td>
-            <td>Use this template</td>
+            <td>Get publicly available information of an artist</td>
           </tr>
         </tbody>
       </table>
@@ -730,7 +730,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/artist/totaltips</span> </td>
-            <td>Use this template</td>
+            <td>Get the total number of tips an artist has received so far</td>
           </tr>
         </tbody>
       </table>
@@ -759,7 +759,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/artist/totalplays</span> </td>
-            <td>Use this template</td>
+            <td>Get the total number of times an artist's song has been played</td>
           </tr>
         </tbody>
       </table>
@@ -787,7 +787,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/artist/earnings</span> </td>
-            <td>Use this template</td>
+            <td>Get the total earnings (tipCount + playCount) of an artist</td>
           </tr>
         </tbody>
       </table>
@@ -822,7 +822,7 @@ Response:
           <tr>
             <td>GET</td>
             <td> <span className='green'>/blah/template</span> </td>
-            <td>Use this template</td>
+            <td>A template for new routes</td>
           </tr>
         </tbody>
       </table>

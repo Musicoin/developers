@@ -9,11 +9,8 @@ class Header extends Component {
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
         <div className='container'>
           <a className='navbar-brand' href='#'>
-            {/* <img src='/img/logo-white.svg' alt='' width='180' /> */}
             <img src='/img/logo-dev-white.svg' alt='' />
-
           </a>
-          {/* <span className='fdev'>for Developers</span> */}
           <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#nav-musicoin' aria-controls='nav-musicoin' aria-expanded='false' aria-label='Toggle navigation'>
             <span className='navbar-toggler-icon' />
           </button>
@@ -26,7 +23,12 @@ class Header extends Component {
               <li className='nav-item '>
                 <NavLink to='/docs' activeclassname='active' className='nav-link'> DOCS </NavLink>
               </li>
-              <li className='nav-item'><a className='nav-link' href='https://forum.musicoin.org' target="_blank"> COMMUNITY</a></li>
+              <li className='nav-item'>
+                <a className='nav-link' href='https://forum.musicoin.org' target="_blank"> COMMUNITY</a>
+              </li>
+              <li className='nav-item '>
+                <NavLink to='/profile' activeclassname='active' className='nav-link'> PROFILE </NavLink>
+              </li>
             </ul>
 
             {localStorage.getItem('user')
