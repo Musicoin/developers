@@ -13,3 +13,7 @@ thead {
   font-size: 12px;
   text-transform: uppercase;
 }
+
+ul {
+  list-style: url('/img/musicoin-favicon.png');
+}
