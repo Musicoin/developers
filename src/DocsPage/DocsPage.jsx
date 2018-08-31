@@ -74,7 +74,7 @@ class DocsPage extends React.Component {
             <Tabs>
               <div label='Authentication'>
                 <h3 className='light'>Authentication Related Endpoints</h3>
-                <ul className="endPoints">
+                <ul className='endPoints'>
                   <li>
                     <table className='endpoint-list mb20'>
                       <thead>
@@ -1390,7 +1390,28 @@ Response:
                 </ul>
               </div>
             </Tabs>
-
+            <br />// Dummy template
+            <table>
+              <thead>
+                <tr>
+                  <th>Key</th>
+                  <th>Value Type</th>
+                  <th>Value Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>status</td>
+                  <td>integer</td>
+                  <td>The HTTP status code that is also returned in the response header. For further information, see <a href='#response-status-codes'>Response Status Codes</a>.</td>
+                </tr>
+                <tr>
+                  <td>message</td>
+                  <td>string</td>
+                  <td>A short description of the cause of the error.</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </Container>
       </div>
