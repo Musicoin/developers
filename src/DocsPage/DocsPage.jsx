@@ -2,6 +2,7 @@ import React from 'react'
 import Highlight from 'react-highlight'
 import { Header } from '../_common/Header'
 import Container from '../_common/Container.jsx'
+import Tabs from '../_common/Tabs/Tabs.jsx'
 
 import '../../node_modules/highlight.js/styles/atom-one-dark.css'
 import './DocsPage.css'
@@ -67,29 +68,32 @@ class DocsPage extends React.Component {
             </tbody>
           </table>
 
-<div>
-  <h2>API Endpoints</h2>
-  <h3 className="light">Authentication Related Endpoints</h3>
-  <ul>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>POST</td>
-            <td> <span className='green'>/auth/signup</span> </td>
-            <td>Creates a new user on the musicoin platform</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'username=varunram1&email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/signup"
+          <div>
+            <h2>API Endpoints</h2>
+
+            <Tabs>
+              <div label='Authentication'>
+                <h3 className='light'>Authentication Related Endpoints</h3>
+                <ul className="endPoints">
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>POST</td>
+                          <td> <span className='green'>/auth/signup</span> </td>
+                          <td>Creates a new user on the musicoin platform</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'username=varunram1&email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/signup"
 
 Response:
 {
@@ -97,27 +101,27 @@ Response:
   "publicKey": "5b769d9a2088882e67d1c765"
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>POST</td>
-            <td> <span className='green'>/auth/credentials</span> </td>
-            <td>Get the Musicoin API credentials on the free tier</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/credentials"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>POST</td>
+                          <td> <span className='green'>/auth/credentials</span> </td>
+                          <td>Get the Musicoin API credentials on the free tier</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/credentials"
 
 Response:
 {
@@ -133,57 +137,59 @@ Response:
   }
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>POST</td>
-            <td> <span className='green'>/authenticate</span> </td>
-            <td>Use this template</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/authenticate"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>POST</td>
+                          <td> <span className='green'>/authenticate</span> </td>
+                          <td>Use this template</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/authenticate"
 
 Response:
 {
   "success": true
 }
 `}
-      </Highlight>
-    </li>
-  </ul>
-  <h3 className="light">User Related Endpoints</h3>
-  <ul>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/user/stats</span> </td>
-            <td>Use this template</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET  "http://35.232.77.81:3000/user/stats?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                </ul>
+              </div>
+              <div label='users'>
+                <h3 className='light'>User Related Endpoints</h3>
+                <ul>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/user/stats</span> </td>
+                          <td>Use this template</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET  "http://35.232.77.81:3000/user/stats?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
 {
@@ -191,81 +197,81 @@ Response:
   "calls": 45
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>POST</td>
-            <td> <span className='green'>/user/delete</span> </td>
-            <td>Endpoint to receive a token to delete a given user from the musicoin platform</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>POST</td>
+                          <td> <span className='green'>/user/delete</span> </td>
+                          <td>Endpoint to receive a token to delete a given user from the musicoin platform</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
 
 Response:
 {
     "token": "7LUFf34slskv8Acy2cVUdTfBzsb6C4225L5PdA8A9NGgAX4gKiv7ViRI5w2CSob9pfqtfbV1UjBuQ4Wo"
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/user/delete/verify</span> </td>
-            <td>Verifies if the delete token passed is correct</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/delete/verify/7LUFf34slskv8Acy2cVUdTfBzsb6C4225L5PdA8A9NGgAX4gKiv7ViRI5w2CSob9pfqtfbV1UjBuQ4Wo?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/user/delete/verify</span> </td>
+                          <td>Verifies if the delete token passed is correct</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/delete/verify/7LUFf34slskv8Acy2cVUdTfBzsb6C4225L5PdA8A9NGgAX4gKiv7ViRI5w2CSob9pfqtfbV1UjBuQ4Wo?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
 
 Response:
 {
   "success": true
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>DELETE</td>
-            <td> <span className='green'>/user/delete</span> </td>
-            <td>Deletes the given user if the token provided matches with the one generate by the user</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>DELETE</td>
+                          <td> <span className='green'>/user/delete</span> </td>
+                          <td>Deletes the given user if the token provided matches with the one generate by the user</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
 
 Response:
 {
@@ -273,27 +279,27 @@ Response:
   "message": "User account was successfully deleted"
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/user/ismember</span> </td>
-            <td>Checks if a given user is a member of the muscoin platform and returns the membership level and days remaining</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/ismember/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/user/ismember</span> </td>
+                          <td>Checks if a given user is a member of the muscoin platform and returns the membership level and days remaining</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/ismember/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
 
 Response:
 {
@@ -302,27 +308,27 @@ Response:
   "membershipLevel": 1
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/user/info</span> </td>
-            <td>Fetches publicly available information of the given user from the Musicoin platform</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/info/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/user/info</span> </td>
+                          <td>Fetches publicly available information of the given user from the Musicoin platform</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/info/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
 
 Response:
 {
@@ -340,30 +346,32 @@ Response:
   "membershipLevel": 1
 }
 `}
-      </Highlight>
-    </li>
-  </ul>
-  <h3 className="light">Release Related Endpoints</h3>
-  <ul>
-    <li>
-      <table className='endpoint-list mb20'>
-          <thead>
-            <tr>
-              <th>METHOD</th>
-              <th>ENDPOINT</th>
-              <th>USAGE</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>GET</td>
-              <td> <span className='green'>/release/genres</span> </td>
-              <td>Get all genres defined on the Musicoin Platform</td>
-            </tr>
-          </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://localhost:3000/release/genres?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                </ul>
+              </div>
+              <div label='release'>
+                <h3 className='light'>Release Related Endpoints</h3>
+                <ul>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/genres</span> </td>
+                          <td>Get all genres defined on the Musicoin Platform</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://localhost:3000/release/genres?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
 
@@ -398,27 +406,27 @@ Response:
   "Other"
 ]
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/release/random</span> </td>
-            <td>Get a Random Release from the Musicoin Catalog</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/release/random?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/random</span> </td>
+                          <td>Get a Random Release from the Musicoin Catalog</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/release/random?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
 {
@@ -438,27 +446,27 @@ Response:
   }
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/release/random?genre=blah</span> </td>
-            <td>Get a Random Release from a particular genre</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/release/random?genre=Rock&clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/random?genre=blah</span> </td>
+                          <td>Get a Random Release from a particular genre</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/release/random?genre=Rock&clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
 {
@@ -480,27 +488,27 @@ Response:
   }
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/artist/new</span> </td>
-            <td>Get a list of artists who have recently signed up on the Musicoin Platform</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/artist/new?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/artist/new</span> </td>
+                          <td>Get a list of artists who have recently signed up on the Musicoin Platform</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/artist/new?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 
 Response:
@@ -611,29 +619,28 @@ Response:
 }
 
 `}
-      </Highlight>
-    </li>
+                    </Highlight>
+                  </li>
 
-
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/release/details</span> </td>
-            <td>Get the details of a particular release</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/release/details/0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/details</span> </td>
+                          <td>Get the details of a particular release</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/release/details/0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
   {
@@ -654,27 +661,27 @@ Response:
   }
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/release/upvotes/trackid</span> </td>
-            <td>Get the number of upvotes a given song has</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/release/upvotes/0x8380864d3d725d36fd08b1d77c1733a736b0a486?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/upvotes/trackid</span> </td>
+                          <td>Get the number of upvotes a given song has</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/release/upvotes/0x8380864d3d725d36fd08b1d77c1733a736b0a486?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
 {
@@ -682,27 +689,27 @@ Response:
   "message": "There are no votes of this track"
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/release/plays/trackid</span> </td>
-            <td>Get the number of times a given release had been played</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/release/plays/0x8380864d3d725d36fd08b1d77c1733a736b0a486?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/plays/trackid</span> </td>
+                          <td>Get the number of times a given release had been played</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/release/plays/0x8380864d3d725d36fd08b1d77c1733a736b0a486?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
 {
@@ -710,27 +717,27 @@ Response:
   "totalPlays": 1345
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/release/tips</span> </td>
-            <td>Get the number of tips a given song has received</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/release/tips/0x8380864d3d725d36fd08b1d77c1733a736b0a486?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/tips</span> </td>
+                          <td>Get the number of tips a given song has received</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/release/tips/0x8380864d3d725d36fd08b1d77c1733a736b0a486?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
 {
@@ -738,27 +745,27 @@ Response:
   "totalTips": 555
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/release/bygenre</span> </td>
-            <td>Get releases by genre</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/release/bygenre?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&genre=rock"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/bygenre</span> </td>
+                          <td>Get releases by genre</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/release/bygenre?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&genre=rock"
 
 Response:
 {
@@ -837,27 +844,27 @@ Response:
   ]
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/release/top</span> </td>
-            <td>Get top releases ordered by number of tips</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/release/top?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&genre=rock"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/top</span> </td>
+                          <td>Get top releases ordered by number of tips</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/release/top?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&genre=rock"
 
 Response:
 {
@@ -1028,27 +1035,27 @@ Response:
   ]
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/release/recent</span> </td>
-            <td>Get a list of new releases on the musicoin platform</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/release/recent?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/release/recent</span> </td>
+                          <td>Get a list of new releases on the musicoin platform</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/release/recent?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
 
 Response:
 {
@@ -1062,31 +1069,34 @@ Response:
   ]
 }
 `}
-      </Highlight>
-    </li>
+                    </Highlight>
+                  </li>
 
-  </ul>
-  <h3 className="light">Artist Related Endpoints</h3>
-  <ul>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/artist/isartist</span> </td>
-            <td>Return whether an artist is verified or not</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/artist/isartist/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                </ul>
+              </div>
+
+              <div label='Artist'>
+                <h3 className='light'>Artist Related Endpoints</h3>
+                <ul>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/artist/isartist</span> </td>
+                          <td>Return whether an artist is verified or not</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/artist/isartist/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 
 Response:
@@ -1094,27 +1104,27 @@ Response:
   "success": true
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/artist/info</span> </td>
-            <td>Get publicly available information of an artist</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/artist/info/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/artist/info</span> </td>
+                          <td>Get publicly available information of an artist</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/artist/info/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 
 Response:
@@ -1124,27 +1134,27 @@ Response:
   "totalPlays": 5517
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/artist/totaltips</span> </td>
-            <td>Get the total number of tips an artist has received so far</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET  "http://35.232.77.81:3000/artist/totaltips/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/artist/totaltips</span> </td>
+                          <td>Get the total number of tips an artist has received so far</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET  "http://35.232.77.81:3000/artist/totaltips/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 
 Response:
@@ -1153,27 +1163,27 @@ Response:
   "tipCount": 1274
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/artist/totalplays</span> </td>
-            <td>Get the total number of times an artist's song has been played</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET  "http://35.232.77.81:3000/artist/totalplays/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/artist/totalplays</span> </td>
+                          <td>Get the total number of times an artist's song has been played</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET  "http://35.232.77.81:3000/artist/totalplays/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
 {
@@ -1181,27 +1191,27 @@ Response:
   "playsCount": 5517
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/artist/earnings</span> </td>
-            <td>Get the total earnings (tipCount + playCount) of an artist</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET  "http://35.232.77.81:3000/artist/earnings/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/artist/earnings</span> </td>
+                          <td>Get the total earnings (tipCount + playCount) of an artist</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET  "http://35.232.77.81:3000/artist/earnings/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
 
 Response:
 {
@@ -1211,27 +1221,27 @@ Response:
   "earned": 6791
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/artist/ofweek</span> </td>
-            <td>Get the artist of the week</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET "http://35.232.77.81:3000/artist/ofweek?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/artist/ofweek</span> </td>
+                          <td>Get the artist of the week</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET "http://35.232.77.81:3000/artist/ofweek?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
 
 Response:
 {
@@ -1244,30 +1254,32 @@ Response:
   ]
 }
 `}
-      </Highlight>
-    </li>
-  </ul>
-  <h3 className="light">Playlist Related Endpoints</h3>
-  <ul>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>POST</td>
-            <td> <span className='green'>/user/playlist</span> </td>
-            <td>Create a new playlist</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X POST -H "Content-Type: application/json" -d '{
+                    </Highlight>
+                  </li>
+                </ul>
+              </div>
+              <div label='Playlist'>
+                <h3 className='light'>Playlist Related Endpoints</h3>
+                <ul>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>POST</td>
+                          <td> <span className='green'>/user/playlist</span> </td>
+                          <td>Create a new playlist</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X POST -H "Content-Type: application/json" -d '{
     "name": "TESTPLAYSL",
     "user": {
         "email":"varunramganesh@gmail.com",
@@ -1285,27 +1297,27 @@ Response:
   "creatorUrl": "http://musicoin.org/artist/nav/undefined"
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/user/playlist</span> </td>
-            <td>Get the details of a playlist</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET -H "Content-Type: application/json" "http://35.232.77.81:3000/user/playlist/TESTPLAYSL?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/user/playlist</span> </td>
+                          <td>Get the details of a playlist</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET -H "Content-Type: application/json" "http://35.232.77.81:3000/user/playlist/TESTPLAYSL?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
 
 Response:
 {
@@ -1316,27 +1328,27 @@ Response:
   "creatorUrl": "http://musicoin.org/artist/nav/undefined"
 }
 `}
-      </Highlight>
-    </li>
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>DELETE</td>
-            <td> <span className='green'>/user/playlist</span> </td>
-            <td>A template for new routes</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'username=varunram&password=123456789' "http://35.232.77.81:3000/user/playlist/TESTPLAYSL?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
+                    </Highlight>
+                  </li>
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>DELETE</td>
+                          <td> <span className='green'>/user/playlist</span> </td>
+                          <td>A template for new routes</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'username=varunram&password=123456789' "http://35.232.77.81:3000/user/playlist/TESTPLAYSL?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
 
 Response:
 {
@@ -1347,53 +1359,41 @@ Response:
   "creatorUrl": "http://musicoin.org/artist/nav/undefined"
 }
 `}
-      </Highlight>
-    </li>
+                    </Highlight>
+                  </li>
 
-
-
-
-
-
-
-    <li>
-      <table className='endpoint-list mb20'>
-        <thead>
-          <tr>
-            <th>METHOD</th>
-            <th>ENDPOINT</th>
-            <th>USAGE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GET</td>
-            <td> <span className='green'>/blah/template</span> </td>
-            <td>A template for new routes</td>
-          </tr>
-        </tbody>
-      </table>
-      <Highlight className='console'>
-{`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" ""
+                  <li>
+                    <table className='endpoint-list mb20'>
+                      <thead>
+                        <tr>
+                          <th>METHOD</th>
+                          <th>ENDPOINT</th>
+                          <th>USAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>GET</td>
+                          <td> <span className='green'>/blah/template</span> </td>
+                          <td>A template for new routes</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <Highlight className='console'>
+                      {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" ""
 
 Response:
 `}
-      </Highlight>
-    </li>
+                    </Highlight>
+                  </li>
 
+                </ul>
+              </div>
+            </Tabs>
 
-
-
-
-
-
-
-
-
-  </ul>
-</div>
-  </Container>
-</div>
+          </div>
+        </Container>
+      </div>
 
     )
   }
