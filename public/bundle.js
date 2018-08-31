@@ -33574,6 +33574,396 @@ var DocsPage = function (_React$Component) {
                   { className: 'console' },
                   '$ curl -X GET "http://35.232.77.81:3000/release/details/0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"\n\nResponse:\n  {\n  "success": true,\n  "data": {\n    "title": "Chasing for ICO",\n    "link": "https://musicion.org/nav/track/0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f",\n    "pppLink": "0xb0d926260d4dc5b65fdb0d6d5a1c36f139cb4f3f41e1add6167ecb0dbaa06635",\n    "genres": [\n      "Beats & Instrumentals"\n    ],\n    "author": "isaac",\n    "authorLink": "https://musicoin.org/nav/artist/0xb1a1ca710934e70e56848328a1ee75e0754c2664",\n    "trackImg": "ipfs://QmRDcdvjeXseuxcV7BPEoDt3bL4yxGZgK7VoDjJwgeAgvc",\n    "trackDescription": ""Give me money"",\n    "directTipCount": 57,\n    "directPlayCount": 393\n  }\n}\n'
                 )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'GET'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/release/upvotes/trackid'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'Get the number of upvotes a given song has'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X GET "http://35.232.77.81:3000/release/upvotes/0x8380864d3d725d36fd08b1d77c1733a736b0a486?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"\n\nResponse:\n{\n  "success": true,\n  "message": "There are no votes of this track"\n}\n'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'GET'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/release/plays/trackid'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'Get the number of times a given release had been played'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X GET "http://35.232.77.81:3000/release/plays/0x8380864d3d725d36fd08b1d77c1733a736b0a486?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"\n\nResponse:\n{\n  "success": true,\n  "totalPlays": 1345\n}\n'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'GET'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/release/tips'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'Get the number of tips a given song has received'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X GET "http://35.232.77.81:3000/release/tips/0x8380864d3d725d36fd08b1d77c1733a736b0a486?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"\n\nResponse:\n{\n  "success": true,\n  "totalTips": 555\n}\n'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'GET'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/release/bygenre'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'Get releases by genre'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X GET "http://35.232.77.81:3000/release/bygenre?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&genre=rock"\n\nResponse:\n{\n  "success": true,\n  "data": [\n    {\n      "title": "Sir EU x DJ J-$crilla "OPEN YER MOUTH" ",\n      "link": "https://musicion.org/nav/track/0x2050a3a70de07a3ab4d4cb24916235277e56e02f",\n      "pppLink": "0xaedba7f9c9cc697bddcc9bd57190414ccb4951d094d5750252e0309251faaa9c",\n      "genres": [\n        "rap",\n        "hip-hop",\n        "rock",\n        "Soundtrack"\n      ],\n      "author": "DJ J-Scrilla",\n      "authorLink": "https://musicoin.org/nav/artist/0xadf9a6478c891d3cf5d0c8a15a3f8b025efee88d",\n      "trackImg": "ipfs://QmSCcV5mogFHvgkLkf5dVGsUTiQVwLTBrRtFfCCwCofoHk",\n      "directPlayCount": 75\n    },\n    {\n      "title": "Egos - Sumerki Idolov",\n      "link": "https://musicion.org/nav/track/0x4c67bd48a4a86e109c0c7327b18afe212af330d4",\n      "pppLink": "0x9fbdb8e5ab0917ec45bcc1f0cd169724a4fe294ea23cab769aa6fabe83781084",\n      "genres": [\n        "rock"\n      ],\n      "author": "Ivan K",\n      "authorLink": "https://musicoin.org/nav/artist/0x97b77c5d443d8e266524f18a07a568d29240a0ba",\n      "trackImg": "ipfs://QmQTAh1kwntnDUxf8kL3xPyUzpRFmD3GVoCKA4D37FK77C",\n      "trackDescription": "",\n      "directTipCount": 2,\n      "directPlayCount": 266\n    },\n    {\n      "title": "Egos - Vsadnik Smerti",\n      "link": "https://musicion.org/nav/track/0xe88baf9f28a5f0ee9623cc47b58da117f6f4c172",\n      "pppLink": "0xce56767fa96743615b90ef7dc9ab7c47f0c90020db1615a0c272616eea42c8e8",\n      "genres": [\n        "rock"\n      ],\n      "author": "Ivan K",\n      "authorLink": "https://musicoin.org/nav/artist/0x97b77c5d443d8e266524f18a07a568d29240a0ba",\n      "trackImg": "ipfs://QmQTAh1kwntnDUxf8kL3xPyUzpRFmD3GVoCKA4D37FK77C",\n      "trackDescription": "",\n      "directTipCount": 1,\n      "directPlayCount": 24\n    },\n    {\n      "title": "Egos - Za Gorizont",\n      "link": "https://musicion.org/nav/track/0x80e47ae41db8ab6e98970402e876f82f8e85320c",\n      "pppLink": "0x64aacb5f0deeb6d60ee71c0199fa67b7c6cf7cea764990d6644baf14c08bc4ac",\n      "genres": [\n        "rock"\n      ],\n      "author": "Ivan K",\n      "authorLink": "https://musicoin.org/nav/artist/0x97b77c5d443d8e266524f18a07a568d29240a0ba",\n      "trackImg": "ipfs://QmQTAh1kwntnDUxf8kL3xPyUzpRFmD3GVoCKA4D37FK77C",\n      "trackDescription": "",\n      "directPlayCount": 11\n    },\n    {\n      "title": "Egos - Tvoi Svet ",\n      "link": "https://musicion.org/nav/track/0xb61f77b7865269df5b79faf85ee92b162c461408",\n      "pppLink": "0x2aba73b93dc1a4b5f63807400872f6a2d90567b7e43faa3ec62e6b3300946f33",\n      "genres": [\n        "rock"\n      ],\n      "author": "Ivan K",\n      "authorLink": "https://musicoin.org/nav/artist/0x97b77c5d443d8e266524f18a07a568d29240a0ba",\n      "trackImg": "ipfs://QmQTAh1kwntnDUxf8kL3xPyUzpRFmD3GVoCKA4D37FK77C",\n      "trackDescription": "",\n      "directTipCount": 1,\n      "directPlayCount": 181\n    }\n  ]\n}\n'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'GET'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/release/top'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'Get top releases ordered by number of tips'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X GET "http://35.232.77.81:3000/release/top?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&genre=rock"\n\nResponse:\n{\n  "success": true,\n  "data": [\n    {\n      "title": "Woman Don\'t Cry ",\n      "link": "https://musicion.org/nav/track/0x83730788de5b08c7c6993f9beca714f340216fcf",\n      "pppLink": "0xfba8576b0831268feba6b790dc799f6adade1e5f452ca7cdd85971c20a86512b",\n      "genres": [\n        "R&B  raggae"\n      ],\n      "author": "Amaray ",\n      "authorLink": "https://musicoin.org/nav/artist/0x0f8df2e0f5d302407e56e17b81051f03dc4767d4",\n      "trackImg": "ipfs://QmQTAh1kwntnDUxf8kL3xPyUzpRFmD3GVoCKA4D37FK77C",\n      "directTipCount": 139105,\n      "directPlayCount": 2699\n    },\n    {\n      "title": "I Need",\n      "link": "https://musicion.org/nav/track/0x442ab5b71fd27aa9e8f3212a5fc695176bf4c6e2",\n      "pppLink": "0x2a5c9da13a936bbffaa288ec2c9a91c7c64a5804a1cb0b6e4ed05bc3fc45c0c3",\n      "genres": [\n        "Hip-hop & Rap",\n        "R&B & Soul"\n      ],\n      "author": "Pain United with Passion",\n      "authorLink": "https://musicoin.org/nav/artist/0x65af0decd4aa294bd787e2fecb4dfdee5d733940",\n      "trackImg": "ipfs://Qme7c8sgNycBS2tAAiCjSYKdfFvd1pNyqZNhT7M6HmaunJ",\n      "trackDescription": "Thanks to You (Listener) , Musicoin, 4Unity Community Corp, & Crypto Kingz for making this happen. The #Food4U Campaign is officially over. The Event is held July 21st 2018. Be on the lookout for video footage on Crypto Kingz Youtube Channel.\r\n\r\nRecap:\r\nFor Unity Community Corporation will utilize Musicoin\u2019s blockchain based music streaming platform which pays per play as a fundraising tool to relaunch the Food4U & Resource program. The inspiring and motivational track \u201CI Need\u201D will be the song used in this campaign, which empower not only the local community but people around the world who want to contribute to a good cause without the financial burden. All you have to do is press play to listen to \u201CI Need\u201D on Musicoin, and the blockchain does the rest. It will pay for the play, and For Unity will use the funds to host Food4U events, which will provide free food and mental health resources for the homeless in the city of Hartford. Our goal is to reach 1 Million plays for \u201CI Need\u201D on Musicoin by July 1st 2018. \r\n\r\n",\n      "directTipCount": 29048,\n      "directPlayCount": 3899\n    },\n    {\n      "title": "TIME TO FLY TAKE 2 - KRISG184 - FT. KRIS T REEDER",\n      "link": "https://musicion.org/nav/track/0x9bb6a64a3785309b1ab0c7e53ad18d74f022acfa",\n      "pppLink": "0x316ac5487c42b66107f1b4b9a97faf6b1c292f10fe628b9daac8a36335495e94",\n      "genres": [\n        "Electronic",\n        "House",\n        "Drum & Bass",\n        "Dance & EDM",\n        "Jazz & Blues"\n      ],\n      "author": "KRISG184",\n      "authorLink": "https://musicoin.org/nav/artist/0x8e8bba22679ffb211c28f33834199812279962f2",\n      "trackImg": "ipfs://QmadzYvkLCsaTcg5do41zxDbpTziAKBS7RD4GLcvdWZWVi",\n      "trackDescription": "TIME TO FLY TAKE 2 - KRISG184 - FT. KRIS T REEDER ###RE-RELEASE###\r\n\r\nFT. KRIS T REEDER (Trombone Creative)",\n      "directTipCount": 24493,\n      "directPlayCount": 395\n    },\n    {\n      "title": "Everytime",\n      "link": "https://musicion.org/nav/track/0x05f50a45366b6c7ba03cd88d976e952eda195d51",\n      "pppLink": "0xaaa7b36975045d94320a59586c9de8860fa89693cf8e73ab76a2b4f1b0a2ec72",\n      "genres": [\n        "Indie",\n        "Hip-hop & Rap",\n        "Alternative Rock",\n        "Experimental",\n        "Indie electronic"\n      ],\n      "author": "Fuzz Heady",\n      "authorLink": "https://musicoin.org/nav/artist/0x4a4c94e6bf3e8ca23e28b7cb3e21540a9a2bd8ff",\n      "trackImg": "ipfs://QmetaWLvVAFT28kKArfcEkxACyBFHFxJepoPNDAGVxtckF",\n      "trackDescription": "I\'m looking to collaborate with fellow artists here on Musicoin. I do 50/50 splits here on Musicoin so lets get creative.. Email me at fuzzheadymusic@gmail.com or @fuzzheady on Twitter",\n      "directTipCount": 18852,\n      "directPlayCount": 5089\n    },\n    {\n      "title": "PRESS ENTER - KRISG184 - FT. KRIS T REEDER",\n      "link": "https://musicion.org/nav/track/0x15d27c5f4dfe016998b7c73129e012e22b739a41",\n      "pppLink": "0xc7c2774e8443c685d0320d1b1b89cc5ce1f6ead376cceef83295f5e1673a9dd9",\n      "genres": [\n        "Electronic",\n        "House",\n        "Drum & Bass",\n        "Dance & EDM"\n      ],\n      "author": "KRISG184",\n      "authorLink": "https://musicoin.org/nav/artist/0x8e8bba22679ffb211c28f33834199812279962f2",\n      "trackImg": "ipfs://QmPJZ7GiNd3bTDhv8XyAt2tgW8KHq1uJkMgT2pt6aq8zpd",\n      "trackDescription": "PRESS ENTER - KRISG184\r\n\r\nFT. KRIS T REEDER (Trombone Creative)",\n      "directTipCount": 11489,\n      "directPlayCount": 233\n    },\n    {\n      "title": "Basic Freedom - KRISG184 - Ft. Kris T Reeder",\n      "link": "https://musicion.org/nav/track/0xbb5c7d3209dbb082dd890c53e0e430d4aab9e285",\n      "pppLink": "0x3d846fdb21002533598f04b005e1c1fb363a2762d98f8626184b4c02d02c39f4",\n      "genres": [\n        "Jazz & Blues",\n        "free jazz"\n      ],\n      "author": "KRISG184",\n      "authorLink": "https://musicoin.org/nav/artist/0x8e8bba22679ffb211c28f33834199812279962f2",\n      "trackImg": "ipfs://QmXj67xvxvcJmm3hYAFyxFrNzmFZFbDCVG49TNuiUBe6UD",\n      "trackDescription": "Basic Freedom - KRISG184 Ft. Kris T Reeder (Trombone)",\n      "directTipCount": 11005,\n      "directPlayCount": 33\n    },\n    {\n      "title": "Sand Man",\n      "link": "https://musicion.org/nav/track/0xe4b298e0373593028765a30bb7b265b1d8fed9de",\n      "pppLink": "0x19f8f32de75e0018ec9942d00b789f18d8c18c57c9e28f4ae9a5f0b0327c1b73",\n      "genres": [\n        "Pop",\n        "Indie",\n        "Electronic"\n      ],\n      "author": "Real Lauren Stone",\n      "authorLink": "https://musicoin.org/nav/artist/0x8e6eaa8bee00b33a8d36fe16991edc89b2902c48",\n      "trackImg": "ipfs://QmfNHe7hmoZ1gtjNSzBaf4VoMc16c8UgVCVy87E3SjnK57",\n      "trackDescription": "A song I write about sleeping over the depression. It went #5 on Beatport which was pretty cool for me. If you like the song come find out what else I have going on www.facebook.com/laurenstoneofficial ",\n      "directTipCount": 9160,\n      "directPlayCount": 1557\n    },\n    {\n      "title": "The Watcher Feat. Fuzz Heady",\n      "link": "https://musicion.org/nav/track/0x72008a9156ce24302ed078ffb7208120064e72cb",\n      "pppLink": "0x95cf5184b5912da29a1f95c44f9b1eefc5293d3d33aaf89e3c3535addc3c87e6",\n      "genres": [\n        "Electronic Rock",\n        "dubstep",\n        "Electronic",\n        "Dance & EDM",\n        "Jamband",\n        "Experimental"\n      ],\n      "author": "The Maniac Agenda",\n      "authorLink": "https://musicoin.org/nav/artist/0xd276489463d3f3719a99090268ca7fd96edb813e",\n      "trackImg": "ipfs://QmQfGKLrgGFYcvvL6pZQLsr5YnjisTzg5kEo57tiDgvzec",\n      "trackDescription": "Monster Collab With Fuzz Heady! Bluesy Guitars with a bass drop that is the .01% that lysol can\'t clean....\r\nIf you like our sounds download our remix album: http://www.maniacmusic.net/music",\n      "directTipCount": 8118,\n      "directPlayCount": 2640\n    },\n    {\n      "title": "DANCE ONE - KRISG184",\n      "link": "https://musicion.org/nav/track/0x0aef23b980688fd2d23479c3d6869fd2e000b807",\n      "pppLink": "0x0fd3550c89f16d3a321c5039e5df547150e1263287d1c3fb7166f0b7bb645e4f",\n      "genres": [\n        "Electronic",\n        "House",\n        "Drum & Bass",\n        "Dance & EDM"\n      ],\n      "author": "KRISG184",\n      "authorLink": "https://musicoin.org/nav/artist/0x8e8bba22679ffb211c28f33834199812279962f2",\n      "trackImg": "ipfs://QmUp7A4GLcPbpBy6Hw4HVnMyPd7b6Knt6vHk4oTjfY464f",\n      "trackDescription": "DANCE ONE - KRISG184",\n      "directTipCount": 7380,\n      "directPlayCount": 282\n    },\n    {\n      "title": "England I Still Believe",\n      "link": "https://musicion.org/nav/track/0xe05d08d69dbc98044ef82b2a1084249c097f7c81",\n      "pppLink": "0xa964f0e6e8c49b315aac978d623b18594b76e751887324a3c23e88b378853d3a",\n      "genres": [\n        "Pop"\n      ],\n      "author": "Scouting For Girls",\n      "authorLink": "https://musicoin.org/nav/artist/0xcb2501ce4061226d471e26d7a897058d1f528d64",\n      "trackImg": "ipfs://QmWH5ZR1vvvHVdiXN1J4KY46sWuVEniByXGJvXyo3CMMMu",\n      "trackDescription": "Scouting For Girls release their World Cup single \u2018England I Still Believe\u2019 ",\n      "directTipCount": 7279,\n      "directPlayCount": 3283\n    }\n  ]\n}\n'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'GET'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/release/recent'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'Get a list of new releases on the musicoin platform'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X GET "http://35.232.77.81:3000/release/recent?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"\n\nResponse:\n{\n  "success": true,\n  "data": [\n    {\n      "artistName": "Ryme",\n      "artistProfile": "https://musicoin.org/nav/artist/0x3e612fcd22df8542dd3bd2d3f278ffea790a9aa9",\n      "trackURL": "https://musicion.org/nav/track/0x4df1ea60df897ed2ce60edf89307e73c300f69f4"\n    }\n  ]\n}\n'
+                )
               )
             ),
             _react2.default.createElement(
@@ -33907,6 +34297,275 @@ var DocsPage = function (_React$Component) {
                   _reactHighlight2.default,
                   { className: 'console' },
                   '$ curl -X GET  "http://35.232.77.81:3000/artist/earnings/0xb1a1ca710934e70e56848328a1ee75e0754c2664?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"\n\nResponse:\n{\n  "success": true,\n  "tipCount": 1274,\n  "playCount": 5517,\n  "earned": 6791\n}\n'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'GET'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/artist/ofweek'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'Get the artist of the week'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X GET "http://35.232.77.81:3000/artist/ofweek?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"\n\nResponse:\n{\n  "success": true,\n  "data": [\n    {\n      "artistName": "danp",\n      "artistAddress": "http://musicoin.org/nav/artist/0xc4c750a6d4676e27b5d4c78a1b3172a543021fe1"\n    }\n  ]\n}\n'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'h3',
+              { className: 'light' },
+              'Playlist Related Endpoints'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'POST'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/user/playlist'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'Create a new playlist'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X POST -H "Content-Type: application/json" -d \'{\n    "name": "TESTPLAYSL",\n    "user": {\n        "email":"varunramganesh@gmail.com",\n        "password": "123456789"\n    },\n    "songs": ["0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f", "0x7f8b75484bbd857c72dab1574181051cea091923"]\n}\' "http://35.232.77.81:3000/user/playlist?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"\n\nResponse:\n{\n  "success": true,\n  "playlistName": "TESTPLAYSL",\n  "playlistUrl": "http://musicoin.org/playlist/TESTPLAYSL",\n  "creatorName": "varunram",\n  "creatorUrl": "http://musicoin.org/artist/nav/undefined"\n}\n'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'GET'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/user/playlist'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'Get the details of a playlist'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X GET -H "Content-Type: application/json" "http://35.232.77.81:3000/user/playlist/TESTPLAYSL?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"\n\nResponse:\n{\n  "success": true,\n  "playlistName": "TESTPLAYSL",\n  "playlistUrl": "http://musicoin.org/playlist/TESTPLAYSL",\n  "creatorName": "varunram",\n  "creatorUrl": "http://musicoin.org/artist/nav/undefined"\n}\n'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'table',
+                  { className: 'endpoint-list mb20' },
+                  _react2.default.createElement(
+                    'thead',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'METHOD'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'ENDPOINT'
+                      ),
+                      _react2.default.createElement(
+                        'th',
+                        null,
+                        'USAGE'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                      'tr',
+                      null,
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'DELETE'
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        ' ',
+                        _react2.default.createElement(
+                          'span',
+                          { className: 'green' },
+                          '/user/playlist'
+                        ),
+                        ' '
+                      ),
+                      _react2.default.createElement(
+                        'td',
+                        null,
+                        'A template for new routes'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactHighlight2.default,
+                  { className: 'console' },
+                  '$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d \'username=varunram&password=123456789\' "http://35.232.77.81:3000/user/playlist/TESTPLAYSL?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"\n\nResponse:\n{\n  "success": true,\n  "playlistName": "TESTPLAYSL",\n  "playlistUrl": "http://musicoin.org/playlist/TESTPLAYSL",\n  "creatorName": "varunram",\n  "creatorUrl": "http://musicoin.org/artist/nav/undefined"\n}\n'
                 )
               ),
               _react2.default.createElement(
