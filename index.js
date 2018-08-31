@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const port = process.env.PORT || 5000
+const port = 80 // 80 for now, 443 later
 const app = express()
 
 // serve static assets normally

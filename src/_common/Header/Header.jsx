@@ -29,6 +29,9 @@ class Header extends Component {
               <li className='nav-item '>
                 <NavLink to='/profile' activeclassname='active' className='nav-link'> PROFILE </NavLink>
               </li>
+              <li className='nav-item '>
+                <NavLink to='/embedded' activeclassname='active' className='nav-link'> PLAYER </NavLink>
+              </li>
             </ul>
 
             {localStorage.getItem('user')

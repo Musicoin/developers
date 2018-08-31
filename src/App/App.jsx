@@ -7,6 +7,7 @@ import { alertActions } from '../_actions'
 import { PrivateRoute } from '../_components'
 import { HomePage } from '../HomePage'
 import { ProfilePage } from '../ProfilePage'
+import {EmbeddedPage} from '../EmbeddedPage'
 import { LoginPage } from '../LoginPage'
 import { SignUpPage } from '../SignUpPage'
 import { ForgotPassword } from '../ForgotPassword'
@@ -41,6 +42,7 @@ class App extends React.Component {
         <Router history={history}>
           <Switch>
             <PrivateRoute path='/profile' component={ProfilePage} />
+            <Route path='/embedded' component={EmbeddedPage} />
             <Route path='/login' component={LoginPage} />
             <Route path='/signup' component={SignUpPage} />
             <Route path='/forgot' component={ForgotPassword} />
