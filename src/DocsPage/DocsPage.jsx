@@ -1390,28 +1390,58 @@ Response:
                 </ul>
               </div>
             </Tabs>
-            <br />// Dummy template
-            <table>
-              <thead>
-                <tr>
-                  <th>Key</th>
-                  <th>Value Type</th>
-                  <th>Value Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>status</td>
-                  <td>integer</td>
-                  <td>The HTTP status code that is also returned in the response header. For further information, see <a href='#response-status-codes'>Response Status Codes</a>.</td>
-                </tr>
-                <tr>
-                  <td>message</td>
-                  <td>string</td>
-                  <td>A short description of the cause of the error.</td>
-                </tr>
-              </tbody>
-            </table>
+            <br />
+              <li> Dummy Endpoint
+                <table className='endpoint-list mb20'>
+                  <thead>
+                    <tr>
+                      <th>METHOD</th>
+                      <th>ENDPOINT</th>
+                      <th>USAGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>GET</td>
+                      <td> <span className='green'>/blah/template</span> </td>
+                      <td>A template for new routes</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Key</th>
+                      <th>Value Type</th>
+                      <th>Value Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>status</td>
+                      <td>integer</td>
+                      <td>The HTTP status code that is also returned in the response header. For further information, see <a href='#response-status-codes'>Response Status Codes</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>message</td>
+                      <td>string</td>
+                      <td>A short description of the cause of the error.</td>
+                    </tr>
+                    <tr>
+                      <td>Dummy endpoints</td>
+                      <td>Dummy endpoints</td>
+                      <td>Dummy endpoints</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br />
+                <Highlight className='console'>
+{`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" ""
+
+Response:
+`}
+                </Highlight>
+              </li>
           </div>
         </Container>
       </div>
