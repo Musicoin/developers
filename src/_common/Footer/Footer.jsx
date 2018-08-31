@@ -10,16 +10,16 @@ class Footer extends Component {
         <div className='container pv50'>
           <div className='row'>
             <div className='col-6 col-md-3 wallet-icons'>
-              <a href="https://mycrypto.com/"><img src='/img/footer/mycrypto.jpg' alt='' height='50' /></a>
+              <a href="https://mycrypto.com/"><img src='/img/footer/mycrypto.png' alt='' height='50' /></a>
             </div>
             <div className='col-6 col-md-3 wallet-icons fit'>
-              <a href="https://www.coinomi.com/"><img src='/img/footer/coinomi.jpg' alt='' height='50' /></a>
+              <a href="https://www.coinomi.com/"><img src='/img/footer/coinomi.png' alt='' height='50' /></a>
             </div>
             <div className='col-6 col-md-3 wallet-icons fit'>
-              <a href="https://bittrex.com"><img src='/img/footer/bittrex.jpg' alt='' height='50' /></a>
+              <a href="https://bittrex.com"><img src='/img/footer/bittrex.png' alt='' height='50' /></a>
             </div>
             <div className='col-6 col-md-3 wallet-icons fitr'>
-              <a href="https://cryptopia.com"><img src='/img/footer/cryptopia.jpg' alt='' height='50' /></a>
+              <a href="https://cryptopia.com"><img src='/img/footer/cryptopia.png' alt='' height='50' /></a>
             </div>
           </div>
 
