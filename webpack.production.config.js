@@ -57,7 +57,7 @@ var config = {
   externals: {
       // global app config object
       config: JSON.stringify({
-        apiUrl: 'http://developers.musicoin.org'
+        apiUrl: 'https://developers.musicoin.org'
       })
   }
 }
