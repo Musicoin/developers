@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const port = 80 // 80 for now, 443 later
+const port = 5000 // nginx proxy
 const app = express()
 
 // serve static assets normally
