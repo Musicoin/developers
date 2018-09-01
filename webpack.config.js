@@ -57,7 +57,7 @@ var config = {
   externals: {
       // global app config object
       config: JSON.stringify({
-          apiUrl: process.env.apiUrl || 'http://localhost:3000'
+          apiUrl: 'http://localhost:3000'
       })
   }
 }
