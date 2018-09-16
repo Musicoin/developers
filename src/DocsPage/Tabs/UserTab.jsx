@@ -24,16 +24,43 @@ class UserTab extends Component {
                 </tr>
               </tbody>
             </table>
-            <Highlight className='console'>
-              {`$ curl -X GET  "http://35.232.77.81:3000/user/stats?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj"
-
-Response:
-{
-  "tie": "Free",
-  "calls": 45
-}
+<Highlight className='console'>
+{`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/usage/stats?clientId=5b9df878444fb807b1d87240&clientSecret=N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
 `}
-            </Highlight>
+</Highlight>
+<Highlight className='javascript'>
+{`// Javascript
+  var request = require("request");
+
+  var options = { method: 'GET',
+    url: 'http://35.232.77.81:3000/user/usage/stats',
+    qs:
+     { clientId: '5b9df878444fb807b1d87240',
+       clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
+    headers:
+     { 'cache-control': 'no-cache',
+       'content-type': 'application/x-www-form-urlencoded' },
+    form:
+     { email: 'johndoe@musicoin.org',
+       password: '123456',
+       username: 'john' } };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+  });
+`}
+</Highlight>
+<Highlight className='console'>
+{`
+  Response:
+  {
+    "tie": "Free",
+    "calls": 24
+  }
+`}
+</Highlight>
           </li>
           <li>
             <table className='endpoint-list mb20'>
@@ -53,7 +80,7 @@ Response:
               </tbody>
             </table>
             <Highlight className='console'>
-              {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
+              {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=john@musicoin.org&password=12345' "http://35.232.77.81:3000/user/delete?clientId=5b9df878444fb807b1d87240&clientSecret=N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
 
 Response:
 {
@@ -80,7 +107,7 @@ Response:
               </tbody>
             </table>
             <Highlight className='console'>
-              {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/delete/verify/7LUFf34slskv8Acy2cVUdTfBzsb6C4225L5PdA8A9NGgAX4gKiv7ViRI5w2CSob9pfqtfbV1UjBuQ4Wo?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
+              {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/delete/verify/7LUFf34slskv8Acy2cVUdTfBzsb6C4225L5PdA8A9NGgAX4gKiv7ViRI5w2CSob9pfqtfbV1UjBuQ4Wo?clientId=5b9df878444fb807b1d87240&clientSecret=N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
 
 Response:
 {
@@ -107,7 +134,7 @@ Response:
               </tbody>
             </table>
             <Highlight className='console'>
-              {`$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/user/delete?clientId=5b769d9a2088882e67d1c765&clientSecret=Q8kuUcJZgugIQOm8mjyCkfHaddCfpV"
+              {`$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=john@musicoin.org&password=12345' "http://35.232.77.81:3000/user/delete?clientId=5b9df878444fb807b1d87240&clientSecret=N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
 
 Response:
 {
@@ -134,17 +161,44 @@ Response:
                 </tr>
               </tbody>
             </table>
-            <Highlight className='console'>
-              {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/ismember/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
-
-Response:
-{
-  "success": true,
-  "daysRemaning": 0,
-  "membershipLevel": 1
-}
+<Highlight className='console'>
+{`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/ismember?clientId=5b9df878444fb807b1d87240&clientSecret=N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
 `}
-            </Highlight>
+</Highlight>
+<Highlight className='javascript'>
+{`// Javascript
+  var request = require("request");
+
+  var options = { method: 'GET',
+    url: 'http://35.232.77.81:3000/user/ismember',
+    qs:
+     { clientId: '5b9df878444fb807b1d87240',
+       clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
+    headers:
+     { 'cache-control': 'no-cache',
+       'content-type': 'application/x-www-form-urlencoded' },
+    form:
+     { email: 'johndoe@musicoin.org',
+       password: '123456',
+       username: 'john' } };
+  a
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+  });
+`}
+</Highlight>
+<Highlight className='console'>
+{`
+  Response:
+  {
+    "success": true,
+    "daysRemaning": 0,
+    "membershipLevel": 1
+  }
+`}
+</Highlight>
           </li>
           <li>
             <table className='endpoint-list mb20'>
@@ -163,26 +217,53 @@ Response:
                 </tr>
               </tbody>
             </table>
-            <Highlight className='console'>
-              {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded"  "http://35.232.77.81:3000/user/info/5b76a19e2088882e67d1c767?clientId=5b76a19e2088882e67d1c767&clientSecret=bpbGaiLjpbKwYw737nHFrGh6f7XWpt"
-
-Response:
-{
-  "createdBy": "0xf527a9a52b77f6c04471914ad57c31a8ae104d71",
-  "artistName": "",
-  "contractVersion": "v0.3",
-  "imageUrl": "",
-  "followers": 0,
-  "socialUrl": "",
-  "tipCount": 0,
-  "balance": 0,
-  "forwardingAddress": "0x0",
-  "descriptionUrl": "",
-  "prettyUrl": "",
-  "membershipLevel": 1
-}
+<Highlight className='console'>
+{`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/info?clientId=5b9df878444fb807b1d87240&clientSecret=N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
 `}
-            </Highlight>
+</Highlight>
+<Highlight className='javascript'>
+{`// Javascript
+  var request = require("request");
+
+  var options = { method: 'GET',
+    url: 'http://35.232.77.81:3000/user/info',
+    qs:
+     { clientId: '5b9df878444fb807b1d87240',
+       clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
+    headers:
+     { 'cache-control': 'no-cache',
+       'content-type': 'application/x-www-form-urlencoded' },
+    form:
+     { email: 'johndoe@musicoin.org',
+       password: '123456',
+       username: 'john' } };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+  });
+`}
+</Highlight>
+<Highlight className='console'>
+{`
+  Response:
+  {
+    "createdBy": "0x6e1d33f195e7fadcc6da8ca9e36d6d4d717cf504",
+    "artistName": "",
+    "contractVersion": "v0.3",
+    "imageUrl": "",
+    "followers": 0,
+    "socialUrl": "",
+    "tipCount": 0,
+    "balance": 0,
+    "forwardingAddress": "0x0",
+    "descriptionUrl": "",
+    "prettyUrl": "",
+    "membershipLevel": 1
+  }
+`}
+</Highlight>
           </li>
         </ul>
       </div>

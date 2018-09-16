@@ -20,30 +20,53 @@ class PlaylistTab extends Component {
                 <tr>
                   <td>POST</td>
                   <td> <span className='green'>/user/playlist</span> </td>
-                  <td>Create a new playlist</td>
+                  <td>Create a new playlist, you need to pass a reaw JSON object to create the playlist.</td>
                 </tr>
               </tbody>
             </table>
-            <Highlight className='console'>
-              {`$ curl -X POST -H "Content-Type: application/json" -d '{
-    "name": "TESTPLAYSL",
+<Highlight className='console'>
+{`$
+  curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{
+	"name": "john'"'"'s playlist",
     "user": {
-        "email":"varunramganesh@gmail.com",
-        "password": "123456789"
+        "email":"johndoe@musicoin.org",
+        "password": "123456"
     },
     "songs": ["0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f", "0x7f8b75484bbd857c72dab1574181051cea091923"]
-}' "http://35.232.77.81:3000/user/playlist?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
+}' "http://35.232.77.81:3000/user/playlist?clientId=5b9df878444fb807b1d87240&clientSecret=N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
+`}
+</Highlight>
+<Highlight className='javascript'>
+{`// Javascript
+  var request = require("request");
 
-Response:
+var options = { method: 'POST',
+  url: 'http://35.232.77.81:3000/user/playlist',
+  qs:
+   { clientId: '5b9df878444fb807b1d87240',
+     clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
+  headers:
+   { 'cache-control': 'no-cache',
+     'content-type': 'application/json' } };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
+`}
+</Highlight>
+<Highlight className='console'>
+{`Response:
 {
   "success": true,
-  "playlistName": "TESTPLAYSL",
-  "playlistUrl": "http://musicoin.org/playlist/TESTPLAYSL",
-  "creatorName": "varunram",
+  "playlistName": "john's playlist",
+  "playlistUrl": "http://musicoin.org/playlist/john's playlist",
+  "creatorName": "john",
   "creatorUrl": "http://musicoin.org/artist/nav/undefined"
 }
 `}
-            </Highlight>
+</Highlight>
           </li>
           <li>
             <table className='endpoint-list mb20'>
@@ -62,19 +85,45 @@ Response:
                 </tr>
               </tbody>
             </table>
-            <Highlight className='console'>
-              {`$ curl -X GET -H "Content-Type: application/json" "http://35.232.77.81:3000/user/playlist/TESTPLAYSL?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
-
-Response:
-{
-  "success": true,
-  "playlistName": "TESTPLAYSL",
-  "playlistUrl": "http://musicoin.org/playlist/TESTPLAYSL",
-  "creatorName": "varunram",
-  "creatorUrl": "http://musicoin.org/artist/nav/undefined"
-}
+<Highlight className='console'>
+{`$ curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" "http://35.232.77.81:3000/user/playlist/john's%20playlist?clientId=5b9df878444fb807b1d87240&clientSecret=N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
 `}
-            </Highlight>
+</Highlight>
+<Highlight className='javascript'>
+{`// Javascript
+  var request = require("request");
+
+  var options = { method: 'GET',
+    url: 'http://35.232.77.81:3000/user/playlist/john%27s%2520playlist',
+    qs:
+     { clientId: '5b9df878444fb807b1d87240',
+       clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
+    headers:
+     { 'cache-control': 'no-cache',
+       'content-type': 'application/json' } };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+  });
+`}
+</Highlight>
+<Highlight className='console'>
+{`Response:
+  {
+    "success": true,
+    "playlistName": "john's playlist",
+    "playlistUrl": "http://musicoin.org/playlist/john's playlist",
+    "creatorName": "john",
+    "creatorUrl": null,
+    "songs": [
+      "0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f",
+      "0x7f8b75484bbd857c72dab1574181051cea091923"
+    ]
+  }
+`}
+</Highlight>
           </li>
           <li>
             <table className='endpoint-list mb20'>
@@ -93,44 +142,46 @@ Response:
                 </tr>
               </tbody>
             </table>
-            <Highlight className='console'>
-              {`$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'username=varunram&password=123456789' "http://35.232.77.81:3000/user/playlist/TESTPLAYSL?clientId=5b7f94e7dcb73452b7c582c1&clientSecret=iOWSTmgrCtulcjwue2eF7aZjvlZVUj&limit=1"
-
-Response:
-{
-  "success": true,
-  "playlistName": "TESTPLAYSL",
-  "playlistUrl": "http://musicoin.org/playlist/TESTPLAYSL",
-  "creatorName": "varunram",
-  "creatorUrl": "http://musicoin.org/artist/nav/undefined"
-}
+<Highlight className='console'>
+{`$ curl -X DELETE -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=johndoe@musicoin.org&password=123456&username=john' "http://35.232.77.81:3000/user/playlist/john's%20playlist?clientId=5b9df878444fb807b1d87240&clientSecret=N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
 `}
-            </Highlight>
-          </li>
+</Highlight>
+<Highlight className='javascript'>
+{`// Javascript
+  var request = require("request");
 
-          <li>
-            <table className='endpoint-list mb20'>
-              <thead>
-                <tr>
-                  <th>METHOD</th>
-                  <th>ENDPOINT</th>
-                  <th>USAGE</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>GET</td>
-                  <td> <span className='green'>/blah/template</span> </td>
-                  <td>A template for new routes</td>
-                </tr>
-              </tbody>
-            </table>
-            <Highlight className='console'>
-              {`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" ""
+  var options = { method: 'DELETE',
+    url: 'http://35.232.77.81:3000/user/playlist/john%27s%2520playlist',
+    qs:
+     { clientId: '5b9df878444fb807b1d87240',
+       clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
+    headers:
+     { 'cache-control': 'no-cache',
+       'content-type': 'application/x-www-form-urlencoded' },
+    form:
+     { email: 'johndoe@musicoin.org',
+       password: '123456',
+       username: 'john' } };
 
-Response:
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+  });
 `}
-            </Highlight>
+</Highlight>
+<Highlight className='console'>
+{`
+  Response:
+  {
+    "success": true,
+    "playlistName": "john's playlist",
+    "playlistUrl": "http://musicoin.org/playlist/john's playlist",
+    "creatorName": "john",
+    "creatorUrl": "http://musicoin.org/artist/nav/undefined"
+  }
+`}
+</Highlight>
           </li>
 
         </ul>

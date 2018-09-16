@@ -36,9 +36,9 @@ class Footer extends Component {
                 <div className='col'>
                   <h4 className='footer-title'>About</h4>
                   <ul className='footer-links'>
-                    <li><a href="https://musicoin.org/how-it-works">How its works</a></li>
-                    <li><a href="https://musicoin.org/musicians">Currency</a></li>
-                    <li><a href="https://musicoin.org/resources/faq">FAQ</a></li>
+                    <li><a href="https://musicoin.org/how-it-works" style={{color: 'white'}}>How its works</a></li>
+                    <li><a href="https://musicoin.org/musicians" style={{color: 'white'}}>Currency</a></li>
+                    <li><a href="https://musicoin.org/resources/faq" style={{color: 'white'}}>FAQ</a></li>
                   </ul>
                 </div>
               </div>
@@ -49,7 +49,7 @@ class Footer extends Component {
           </div>
           <div className='row mt40'>
             <span className='col-md-6 footer-text center-mobile'>
-            <a href="https://musicoin.org/legal/tos">Terms of use</a> - <a href="https://musicoin.org/legal/legal">Privacy Policy</a>
+            <a href="https://musicoin.org/legal/tos" style={{color: 'white'}}>Terms of use</a> - <a href="https://musicoin.org/legal/legal" style={{color: 'white'}}>Privacy Policy</a>
             </span>
             <span className='col-md-6 footer-text center-mobile tard'>© 2018 MUSICOIN | POWERED BY $MUSIC</span>
           </div>

@@ -2,15 +2,23 @@
   color: #343434;
   text-decoration: none;
 }
+
 .sc-htoDjs a:hover {
   color: gold;
 }
 
 /* ABOUT */
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .pbs1 {
-      font-size: 24px!important;
-  
-    }
+    font-size: 24px !important;
   }
+}
+
+.tab-list-active {
+  font-weight: 800 !important;
+  color: gold !important;
+  border-bottom: 5px solid gold;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}

@@ -77,7 +77,6 @@ class SignUpPage extends React.Component {
                 <img src='/img/logo-dev-white.svg' alt='Musicoin Developers Logo' height='40' />
               </Link>
             </p>
-
           </form>
         </div>
       </div>

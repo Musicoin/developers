@@ -29,7 +29,7 @@ class DocsPage extends React.Component {
           </p>
           <img src='/img/webapi/webapi_intro.png' alt='Musicoin WebAPI image' className='responsive' />
           <p>
-            There are various endpoints that can be used to fetch data about artists, musicians and playlsits. Transaction log can alos be fetched using the Musicoin API. Access is rate limited according to the API plan you have purchased.
+            There are various endpoints that can be used to fetch data about artists, musicians and playlsits. Transaction log can also be fetched using the Musicoin API. Access is rate limited according to the API plan you have purchased.
           </p>
           <p>
             Your API plan is: Free / Basic / Enterprise
@@ -95,63 +95,10 @@ class DocsPage extends React.Component {
               </div>
             </Tabs>
             <br />
-              <li> Dummy Endpoint
-                <table className='endpoint-list mb20'>
-                  <thead>
-                    <tr>
-                      <th>METHOD</th>
-                      <th>ENDPOINT</th>
-                      <th>USAGE</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>GET</td>
-                      <td> <span className='green'>/blah/template</span> </td>
-                      <td>A template for new routes</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Key</th>
-                      <th>Value Type</th>
-                      <th>Value Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>status</td>
-                      <td>integer</td>
-                      <td>The HTTP status code that is also returned in the response header. For further information, see <a href='#response-status-codes'>Response Status Codes</a>.</td>
-                    </tr>
-                    <tr>
-                      <td>message</td>
-                      <td>string</td>
-                      <td>A short description of the cause of the error.</td>
-                    </tr>
-                    <tr>
-                      <td>Dummy endpoints</td>
-                      <td>Dummy endpoints</td>
-                      <td>Dummy endpoints</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <br />
-                <Highlight className='console'>
-{`$ curl -X GET -H "Content-Type: application/x-www-form-urlencoded" ""
-
-Response:
-`}
-                </Highlight>
-              </li>
           </div>
         </Container>
       </div>
-
-    )
+    )}
   }
-}
 
 export { DocsPage }

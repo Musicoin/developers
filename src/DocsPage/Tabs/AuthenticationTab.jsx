@@ -6,7 +6,7 @@ class AuthenticationTab extends Component {
     return (
       <div>
         <h3 className='light'>Authentication Related Endpoints</h3>
-        <ul className='endPoints'>
+        <ul>
           <li>
             <table className='endpoint-list mb20'>
               <thead>
@@ -19,21 +19,44 @@ class AuthenticationTab extends Component {
               <tbody>
                 <tr>
                   <td>POST</td>
-                  <td> <span className='green'>/auth/signup</span> </td>
+                  <td> <span className='green'>/signup</span> </td>
                   <td>Creates a new user on the musicoin platform</td>
                 </tr>
               </tbody>
             </table>
-            <Highlight className='console'>
-              {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'username=varunram1&email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/signup"
-
-Response:
-{
-  "success": true,
-  "publicKey": "5b769d9a2088882e67d1c765"
-}
+<Highlight className='console'>
+{`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=john@musicoin.org&password=12345&username=johndoe' "http://35.232.77.81:3000/signup"
 `}
-            </Highlight>
+</Highlight>
+<Highlight className='javascript'>
+{`// Javascript
+  var request = require("request");
+
+  var options = { method: 'POST',
+    url: 'http://35.232.77.81:3000/signup',
+    headers:
+     { 'cache-control': 'no-cache',
+       'content-type': 'application/x-www-form-urlencoded' },
+    form:
+     { email: 'john@musicoin.org',
+       password: '12345',
+       username: 'johndoe' } };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+  });
+`}
+</Highlight>
+<Highlight className='console'>
+{`Response:
+  {
+    "success": true,
+    "publicKey": "5b9df730444fb807b1d8723a"
+  }
+`}
+</Highlight>
           </li>
           <li>
             <table className='endpoint-list mb20'>
@@ -52,24 +75,43 @@ Response:
                 </tr>
               </tbody>
             </table>
-            <Highlight className='console'>
-              {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/auth/credentials"
-
-Response:
-{
-  "success": true,
-    "apiuser": {
-    "_id": "5b76a19e2088882e67d1c768",
-    "clientId": "5b76a19e2088882e67d1c767",
-    "clientSecret": "bpbGaiLjpbKwYw737nHFrGh6f7XWpt",
-    "__v": 0,
-    "balance": 0,
-    "calls": 0,
-    "limitApiCalls": 1000
-  }
-}
+<Highlight className='console'>
+{`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=johndoe@musicoin.org&password=123456&username=john' "http://35.232.77.81:3000/credentials"
 `}
-            </Highlight>
+</Highlight>
+<Highlight className='javascript'>
+{`// Javascript
+  var request = require("request");
+
+  var options = { method: 'POST',
+    url: 'http://35.232.77.81:3000/credentials',
+    headers:
+     { 'cache-control': 'no-cache',
+       'content-type': 'application/x-www-form-urlencoded' },
+    form:
+     { email: 'johndoe@musicoin.org',
+       password: '123456',
+       username: 'john' } };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+  });
+`}
+</Highlight>
+<Highlight className='console'>
+{`
+  Response:
+  {
+    "success": true,
+    "apiuser": {
+      "clientId": "5b9df878444fb807b1d87240",
+      "clientSecret": "N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
+    }
+  }
+`}
+</Highlight>
           </li>
           <li>
             <table className='endpoint-list mb20'>
@@ -84,19 +126,43 @@ Response:
                 <tr>
                   <td>POST</td>
                   <td> <span className='green'>/authenticate</span> </td>
-                  <td>Use this template</td>
+                  <td>Checks for the right credentials</td>
                 </tr>
               </tbody>
             </table>
-            <Highlight className='console'>
-              {`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  -d 'email=varunramganesh@gmail.com&password=123456789' "http://35.232.77.81:3000/authenticate"
-
-Response:
-{
-  "success": true
-}
+<Highlight className='console'>
+{`$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Cache-Control: no-cache" -d 'email=johndoe@musicoin.org&password=123456&username=john' "http://35.232.77.81:3000/authenticate"
 `}
-            </Highlight>
+</Highlight>
+<Highlight className='javascript'>
+{`// Javascript
+  var request = require("request");
+
+  var options = { method: 'POST',
+    url: 'http://35.232.77.81:3000/authenticate',
+    headers:
+     { 'cache-control': 'no-cache',
+       'content-type': 'application/x-www-form-urlencoded' },
+    form:
+     { email: 'johndoe@musicoin.org',
+       password: '123456',
+       username: 'john' } };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+  });
+`}
+</Highlight>
+<Highlight className='console'>
+{`
+  Response:
+  {
+    "success": true
+  }
+`}
+</Highlight>
           </li>
         </ul>
       </div>

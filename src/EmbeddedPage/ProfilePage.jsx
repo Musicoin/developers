@@ -67,6 +67,9 @@ class EmbeddedPage extends React.Component {
 {`<iframe width="600px" id="embedded-player-preview-frame" src="https://musicoin.org/embedded-player/0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f?embedded=true&autoQueue=true&preview=true"></iframe>`}
 </Highlight>
 <iframe width="600px" src="https://musicoin.org/embedded-player/0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f?embedded=true&autoQueue=true&preview=true"></iframe>
+/* Embedded music player guidelines
+<iframe height="400px" width="800px" id="embedded-player-preview-frame" src="https://musicoin.org/artist/0x601dd2de59a5295dcfffc99ddc188ee3488bc8d0"></iframe>
+*/
                 </li>
               </ol>
           </div>
