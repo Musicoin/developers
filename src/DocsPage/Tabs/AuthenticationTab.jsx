@@ -30,32 +30,31 @@ class AuthenticationTab extends Component {
 </Highlight>
 <Highlight className='javascript'>
 {`// Javascript
-  var request = require("request");
+var request = require("request");
 
-  var options = { method: 'POST',
-    url: 'http://35.232.77.81:3000/signup',
-    headers:
-     { 'cache-control': 'no-cache',
-       'content-type': 'application/x-www-form-urlencoded' },
-    form:
-     { email: 'john@musicoin.org',
-       password: '12345',
-       username: 'johndoe' } };
+var options = { method: 'POST',
+  url: 'http://35.232.77.81:3000/signup',
+  headers:
+   { 'cache-control': 'no-cache',
+     'content-type': 'application/x-www-form-urlencoded' },
+  form:
+   { email: 'john@musicoin.org',
+     password: '12345',
+     username: 'johndoe' } };
 
-  request(options, function (error, response, body) {
-    if (error) throw new Error(error);
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
 
-    console.log(body);
-  });
+  console.log(body);
+});
 `}
 </Highlight>
 <Highlight className='console'>
 {`Response:
-  {
-    "success": true,
-    "publicKey": "5b9df730444fb807b1d8723a"
-  }
-`}
+{
+  "success": true,
+  "publicKey": "5b9df730444fb807b1d8723a"
+}`}
 </Highlight>
           </li>
           <li>
@@ -81,35 +80,34 @@ class AuthenticationTab extends Component {
 </Highlight>
 <Highlight className='javascript'>
 {`// Javascript
-  var request = require("request");
+var request = require("request");
 
-  var options = { method: 'POST',
-    url: 'http://35.232.77.81:3000/credentials',
-    headers:
-     { 'cache-control': 'no-cache',
-       'content-type': 'application/x-www-form-urlencoded' },
-    form:
-     { email: 'johndoe@musicoin.org',
-       password: '123456',
-       username: 'john' } };
+var options = { method: 'POST',
+  url: 'http://35.232.77.81:3000/credentials',
+  headers:
+   { 'cache-control': 'no-cache',
+     'content-type': 'application/x-www-form-urlencoded' },
+  form:
+   { email: 'johndoe@musicoin.org',
+     password: '123456',
+     username: 'john' } };
 
-  request(options, function (error, response, body) {
-    if (error) throw new Error(error);
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
 
-    console.log(body);
-  });
+  console.log(body);
+});
 `}
 </Highlight>
 <Highlight className='console'>
-{`
-  Response:
-  {
-    "success": true,
-    "apiuser": {
-      "clientId": "5b9df878444fb807b1d87240",
-      "clientSecret": "N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
-    }
+{`Response:
+{
+  "success": true,
+  "apiuser": {
+    "clientId": "5b9df878444fb807b1d87240",
+    "clientSecret": "N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx"
   }
+}
 `}
 </Highlight>
           </li>
@@ -136,31 +134,30 @@ class AuthenticationTab extends Component {
 </Highlight>
 <Highlight className='javascript'>
 {`// Javascript
-  var request = require("request");
+var request = require("request");
 
-  var options = { method: 'POST',
-    url: 'http://35.232.77.81:3000/authenticate',
-    headers:
-     { 'cache-control': 'no-cache',
-       'content-type': 'application/x-www-form-urlencoded' },
-    form:
-     { email: 'johndoe@musicoin.org',
-       password: '123456',
-       username: 'john' } };
+var options = { method: 'POST',
+  url: 'http://35.232.77.81:3000/authenticate',
+  headers:
+   { 'cache-control': 'no-cache',
+     'content-type': 'application/x-www-form-urlencoded' },
+  form:
+   { email: 'johndoe@musicoin.org',
+     password: '123456',
+     username: 'john' } };
 
-  request(options, function (error, response, body) {
-    if (error) throw new Error(error);
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
 
-    console.log(body);
-  });
+  console.log(body);
+});
 `}
 </Highlight>
 <Highlight className='console'>
-{`
-  Response:
-  {
-    "success": true
-  }
+{`Response:
+{
+  "success": true
+}
 `}
 </Highlight>
           </li>

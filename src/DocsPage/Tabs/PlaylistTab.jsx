@@ -38,7 +38,7 @@ class PlaylistTab extends Component {
 </Highlight>
 <Highlight className='javascript'>
 {`// Javascript
-  var request = require("request");
+var request = require("request");
 
 var options = { method: 'POST',
   url: 'http://35.232.77.81:3000/user/playlist',
@@ -91,37 +91,37 @@ request(options, function (error, response, body) {
 </Highlight>
 <Highlight className='javascript'>
 {`// Javascript
-  var request = require("request");
+var request = require("request");
 
-  var options = { method: 'GET',
-    url: 'http://35.232.77.81:3000/user/playlist/john%27s%2520playlist',
-    qs:
-     { clientId: '5b9df878444fb807b1d87240',
-       clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
-    headers:
-     { 'cache-control': 'no-cache',
-       'content-type': 'application/json' } };
+var options = { method: 'GET',
+  url: 'http://35.232.77.81:3000/user/playlist/john%27s%2520playlist',
+  qs:
+   { clientId: '5b9df878444fb807b1d87240',
+     clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
+  headers:
+   { 'cache-control': 'no-cache',
+     'content-type': 'application/json' } };
 
-  request(options, function (error, response, body) {
-    if (error) throw new Error(error);
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
 
-    console.log(body);
-  });
+  console.log(body);
+});
 `}
 </Highlight>
 <Highlight className='console'>
 {`Response:
-  {
-    "success": true,
-    "playlistName": "john's playlist",
-    "playlistUrl": "http://musicoin.org/playlist/john's playlist",
-    "creatorName": "john",
-    "creatorUrl": null,
-    "songs": [
-      "0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f",
-      "0x7f8b75484bbd857c72dab1574181051cea091923"
-    ]
-  }
+{
+  "success": true,
+  "playlistName": "john's playlist",
+  "playlistUrl": "http://musicoin.org/playlist/john's playlist",
+  "creatorName": "john",
+  "creatorUrl": null,
+  "songs": [
+    "0x8c6cf658952d77c04de98c8a94c7b3b78d785b9f",
+    "0x7f8b75484bbd857c72dab1574181051cea091923"
+  ]
+}
 `}
 </Highlight>
           </li>
@@ -148,38 +148,37 @@ request(options, function (error, response, body) {
 </Highlight>
 <Highlight className='javascript'>
 {`// Javascript
-  var request = require("request");
+var request = require("request");
 
-  var options = { method: 'DELETE',
-    url: 'http://35.232.77.81:3000/user/playlist/john%27s%2520playlist',
-    qs:
-     { clientId: '5b9df878444fb807b1d87240',
-       clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
-    headers:
-     { 'cache-control': 'no-cache',
-       'content-type': 'application/x-www-form-urlencoded' },
-    form:
-     { email: 'johndoe@musicoin.org',
-       password: '123456',
-       username: 'john' } };
+var options = { method: 'DELETE',
+  url: 'http://35.232.77.81:3000/user/playlist/john%27s%2520playlist',
+  qs:
+   { clientId: '5b9df878444fb807b1d87240',
+     clientSecret: 'N5e2IUb1GcvzXJ2Ot2VhoSaXQBj9Gx' },
+  headers:
+   { 'cache-control': 'no-cache',
+     'content-type': 'application/x-www-form-urlencoded' },
+  form:
+   { email: 'johndoe@musicoin.org',
+     password: '123456',
+     username: 'john' } };
 
-  request(options, function (error, response, body) {
-    if (error) throw new Error(error);
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
 
-    console.log(body);
-  });
+  console.log(body);
+});
 `}
 </Highlight>
 <Highlight className='console'>
-{`
-  Response:
-  {
-    "success": true,
-    "playlistName": "john's playlist",
-    "playlistUrl": "http://musicoin.org/playlist/john's playlist",
-    "creatorName": "john",
-    "creatorUrl": "http://musicoin.org/artist/nav/undefined"
-  }
+{`Response:
+{
+  "success": true,
+  "playlistName": "john's playlist",
+  "playlistUrl": "http://musicoin.org/playlist/john's playlist",
+  "creatorName": "john",
+  "creatorUrl": "http://musicoin.org/artist/nav/undefined"
+}
 `}
 </Highlight>
           </li>
